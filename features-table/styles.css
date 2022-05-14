@@ -26,15 +26,36 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/******************** PLANS HEADER ********************/
+/*compare plans*/
+.compare-plans-container {
+    display: flex;
+    justify-content: center;
+}
+.compare-plans {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 80px;
+    display: inline-block;
+    padding: 8px;
+    cursor: pointer;
+}
+.compare-plans:hover img {
+    transform: scale(1.25);
+}
+.compare-plans img {
+    margin-left: 8px;
+}
+/******************** PLANS HEADER (DESKTOP) ********************/
 .plans-header-container {
     display: flex;  
     flex-direction: row-reverse;
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.8);
 }
 .plans-header {
-    font-family: Graphik, Helvetica, Arial, sans-serif;
-    font-weight: 600;
     display: flex;
     width: 60%;
 }
@@ -46,6 +67,8 @@
     width: 33.333333333%;
     box-sizing: border-box;
     border: 1px solid #B5B5B5;
+    background-color: #fff;
+    transition: padding 0.25s;
 }
 .plans-header .plan:nth-child(2) {
     border-color: #FA3263
@@ -59,26 +82,41 @@
 .plans-header .plan__title {
     font-size: 14px;
     margin: 0;
+    font-family: Graphik, Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
-.plans-header .plan__price {
+.plan__price {
     font-size: 36px;
     display: flex;
+    font-family: Graphik, Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
-.plans-header .plan_cp {
+.plan_cp {
+    font-size: 12px;
     padding-top: 7px;
     padding-left: 4px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.plans-header .plan__currency,
-.plans-header .plan__periodicity {
+.plan__currency,
+.plan__periodicity {
     font-family: Rubik, Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 12px;
     color: #5A5F63;
 }
-/******************** FEATURES TABLES ********************/
+/*plans header animation when sticky*/
+.plans-header-container .plan__price > * {
+    transition: font-size 0.25s;
+}
+.plans-header-container.sticky .plan__price > * {
+    font-size: 0;
+}
+.plans-header-container.sticky .plans-header .plan {
+    padding: 8px;
+}
+
+/******************** FEATURES TABLES (DESKTOP) ********************/
 .features-table {
     width: 100%;
     font-family: Rubik, Helvetica, Arial, sans-serif;
@@ -101,7 +139,8 @@
     text-align: center;
 }
 /* tbody */
-.features-table tbody td{
+.features-table tbody td,
+.plan-card__table tbody td{
     border-bottom: 1px solid #d9d9d9;
 }
 .features-table tbody .td-container{
@@ -133,7 +172,7 @@ span.tag {
     font-weight: 400;
     padding: 3px 5px;
     border-radius: 2px;
-    margin: 0 8px;
+    margin: 0 0 0 8px;
 }
 .features-table tbody td:first-child span.tag{
     margin-left: 8px;
@@ -143,27 +182,157 @@ span.tag {
     padding: 0 8px;
 }
 /*buttons*/
-.features-table .button {
+.features-table .button,
+.plan-card .button {
     text-decoration: none;
     display: inline-block;
     border-radius: 100px;
     color: white;
     padding: 13.5px;
     font-weight: 500;
+    font-family: Rubik, Helvetica, Arial, sans-serif;
     width: 100%;
     box-sizing: border-box;
 }
-.features-table .button--primary {
+.features-table .button--primary,
+.plan-card .button--primary {
     background-color: #FA3263;
 }
-.features-table .button--primary:hover {
+.features-table .button--primary:hover,
+.plan-card .button--primary:hover{
     background-color: rgb(210,40,93);
 }
-.features-table .button--secondary {
+.features-table .button--secondary,
+.plan-card .button--secondary {
     background-color: #FFF;
     border: 1px solid black;
     color: black;
 }
-.features-table .button--secondary:hover {
+.features-table .button--secondary:hover,
+.plan-card .button--secondary:hover {
     background-color: rgba(0,0,0, 0.05);
 }
+/*go top button*/
+.go-top {
+    cursor: pointer;
+}
+.go-top:hover {
+    transform: scale(1.25);
+}
+/******************** PLANS CARDS (MOBILE) ********************/
+.plan-card {
+    padding: 16px 16px 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    text-align: center;
+}
+.plan-card__title {
+    font-family: Graphik, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.plan-card__description {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #5A5F63;
+}
+.plan-price-container {
+    display: flex;
+    justify-content: center;
+}
+.plan-card .plan__price {
+    font-size: 46px;
+}
+.plan-card .plan_cp {
+    font-size: 14px;
+}
+.toggle-plan-features,
+.hide-plan-features {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 16px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    color: #FA3263;
+}
+.toggle-plan-features:not(.collapsed) .text--uncollapsed {
+    display: inline-block;
+}
+.toggle-plan-features:not(.collapsed) .text--collapsed {
+    display: none;
+}
+.toggle-plan-features.collapsed .text--uncollapsed {
+    display: none;
+}
+.plan-card__footer {
+    margin-top: 30px;
+}
+/*tables*/
+.plan-card__table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+.plan-card__table thead th {
+    font-family: Graphik, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.plan-card__table tbody {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+.plan-card__table tbody td {
+    padding: 16.5px 0;
+}
+.plan-card__table tbody .td-container{
+    display: flex;
+    align-items: center;
+}
+.plan-card__table tbody td:nth-child(2) .td-container {
+    justify-content: flex-end;
+}
+.plan-card__table .feature {
+    width: calc(100% - 100px);
+    padding-top: 32px;
+    padding-bottom: 16px;
+}   
+.plan-card__table .check-col {
+    width: 100px;
+}
+.plan-card__table tbody td:nth-child(2) {
+    text-align: right   ;
+}
+.plan-card__table span.tag {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.plan-card__table .check {
+    padding-right: 0;
+}
+/*plan-card__table-container*/
+.plan-card__table-container {
+    overflow: hidden;
+}
+.plan-card__table-container.collapsed {
+    height: 0;
+}
+
+/******************** HELPER CLASSES ********************/
+.tal { 
+    text-align: left;
+}
+.hidden {
+    display: none;
+}
+
+<span class="tag">Extra Cost</span>
