@@ -54,6 +54,7 @@
     position: sticky;
     top: 0;
     background: rgba(255,255,255,0.8);
+    z-index: 1;
 }
 .plans-header {
     display: flex;
@@ -64,11 +65,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 33.333333333%;
     box-sizing: border-box;
     border: 1px solid #B5B5B5;
     background-color: #fff;
-    transition: padding 0.25s;
+    transition: all 0.25s;
+    text-align: center;
 }
 .plans-header .plan:nth-child(2) {
     border-color: #FA3263
@@ -90,7 +93,20 @@
     display: flex;
     font-family: Graphik, Helvetica, Arial, sans-serif;
     font-weight: 600;
+    justify-content: center;
 }
+/*plan price sticky*/
+.plan__price--sticky {
+    font-size: 0;
+    transition: 0.25s font-size;
+}
+.plan__price--sticky:before {
+    content: "/ "
+}
+.plans-header-container.sticky .plan__price--sticky{
+    font-size: inherit;
+}
+/* /end of plan price sticky */
 .plan_cp {
     font-size: 12px;
     padding-top: 7px;
@@ -115,7 +131,9 @@
 .plans-header-container.sticky .plans-header .plan {
     padding: 8px;
 }
-
+.plans-header-container.sticky  .plan_cp {
+    padding: 0;
+}
 /******************** FEATURES TABLES (DESKTOP) ********************/
 .features-table {
     width: 100%;
@@ -141,7 +159,11 @@
 /* tbody */
 .features-table tbody td,
 .plan-card__table tbody td{
-    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+}
+.features-table tbody tr:first-child td,
+.plan-card__table tbody tr:first-child td{
+    border-top: none;
 }
 .features-table tbody .td-container{
     display: flex;
@@ -172,7 +194,8 @@ span.tag {
     font-weight: 400;
     padding: 3px 5px;
     border-radius: 2px;
-    margin: 0 0 0 8px;
+    margin: 0 8px 0 0;
+    position: relative;
 }
 .features-table tbody td:first-child span.tag{
     margin-left: 8px;
@@ -192,7 +215,15 @@ span.tag {
     font-weight: 500;
     font-family: Rubik, Helvetica, Arial, sans-serif;
     width: 100%;
+    max-width: 220px;
     box-sizing: border-box;
+}
+.features-table .button[disabled],
+.plan-card .button[disabled] {
+    pointer-events: none;
+    background-color: #d9d9d9;
+    color: #fff;
+    border-color: transparent !important;
 }
 .features-table .button--primary,
 .plan-card .button--primary {
@@ -226,6 +257,9 @@ span.tag {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
     border-radius: 8px;
     text-align: center;
+    max-width: 641px;
+    margin: 0 auto;
+    margin-bottom: 32px;
 }
 .plan-card__title {
     font-family: Graphik, Helvetica, Arial, sans-serif;
@@ -238,6 +272,9 @@ span.tag {
     font-family: Rubik, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #5A5F63;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.6em;
 }
 .plan-price-container {
     display: flex;
@@ -302,12 +339,12 @@ span.tag {
     justify-content: flex-end;
 }
 .plan-card__table .feature {
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
     padding-top: 32px;
     padding-bottom: 16px;
 }   
 .plan-card__table .check-col {
-    width: 100px;
+    width: 150px;
 }
 .plan-card__table tbody td:nth-child(2) {
     text-align: right   ;
@@ -317,7 +354,7 @@ span.tag {
     padding-bottom: 0;
 }
 .plan-card__table .check {
-    padding-right: 0;
+    /*padding-right: 0;*/
 }
 /*plan-card__table-container*/
 .plan-card__table-container {
@@ -326,7 +363,31 @@ span.tag {
 .plan-card__table-container.collapsed {
     height: 0;
 }
-
+/******************** DESKTOP / MOBILE ********************/
+.more-info__td {
+    cursor: pointer;
+}
+.more-info__td--hidden .more-info__info {
+    display: none;
+}
+.more-info__i {
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #969BA0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    flex-shrink: 0;
+    color: #969BA0;
+}
+.more-info__info {
+    display: block;
+    line-height: 1.6em;
+    color: #969BA0;
+    margin-top: 4px;
+}
 /******************** HELPER CLASSES ********************/
 .tal { 
     text-align: left;
@@ -334,5 +395,141 @@ span.tag {
 .hidden {
     display: none;
 }
+/******************** EXTRA COST / DINAMIC PRICE ********************/
+/* extra cost*/
+.extra-cost {
+    position: absolute;
+    background-color: #fff;
+    width: 84px;
+    color: #111;
+    font-family: Graphik, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    border: 1px solid #d9d9d9;
+    padding: 4px;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 28px;
+    font-size: 14px;
+}
+.extra-cost__value-cp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra-cost__currency-perodicity {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #5A5F63;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 2px;
+}
+.extra-cost__btn {
+    background-color: #FA3263;
+    color: #fff;
+    border: 0;
+    font-weight: 500;
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+    padding: 2px 15px;
+    margin: 4px 0;
+}
+.extra-cost__btn:hover {
+    cursor: pointer;
+    background-color: rgb(210,40,93);
+}
+.extra-cost__btn:not(.extra-cost__btn--add) .extra-cost__btn__add {
+    display: none;
+}
+.extra-cost__btn:not(.extra-cost__btn--add) .extra-cost__btn__remove {
+    display: inline-block;
+}
+.extra-cost__btn.extra-cost__btn--add .extra-cost__btn__remove{
+    display: none;
+}
+.extra-cost__triangle {
+    border-width: 8px 8px 0 8px;
+    border-color: #d9d9d9 transparent transparent transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+}
+.extra-cost__triangle:after {
+    content: "";
+    border-width: 6px 6px 0 6px;
+    border-color: #fff transparent transparent transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    left: -6px;
+    bottom: 2px;
+}
+/* dinamic price */
+.plan--toggleBackgroundColor {
+    background-color: #F9E8E6 !important;
+}
+.plan__extra-cost {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    background-color: #F9E8E6;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin: 8px 0 -4px 0px;
+    display: none;
+}
+.plan--show-extra-cost .plan__extra-cost {
+    display: inline-block;
+}
+.plans-header-container.sticky .plan__extra-cost {
+    display: none;
+}
+/******************** TIP ********************/
+.tip {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: aquamarine;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(49, 207, 154)
+}
+.tip i {
+    margin-right: 8px;
+}
+/******************** COMPARE PLANS (MOBILE) ********************/
+.plan-card__table tbody tr.other-plan td {
+    border-top: 0;
+    padding-top: 0;
+}
+.plan-card__table tbody tr.other-plan td:first-child .td-container{
+    font-family: Graphik, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.plan-card__table .other-plan {
+    display: none;
+}
+.plan-card__table .other-plan.show {
+    display: table-row;
+}
 
-<span class="tag">Extra Cost</span>
+
+/******************** RESPONSIVE ********************/
+.container-plans-mobile {
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .container-plans-mobile {
+        display: block;
+    }
+    .container-plans-desktop {
+        display: none;
+    }
+}
+

@@ -58,3 +58,43 @@ hidePlanFeatures.forEach(hpf => {
         togglePlanFeatures.classList.add('collapsed');
     })
 });
+
+// MORE INFO ====================================================
+const moreInfoTds = document.querySelectorAll('.more-info__td');
+moreInfoTds.forEach(moreInfoTd => {
+    moreInfoTd.addEventListener('click', function(){
+        moreInfoTd.classList.toggle('more-info__td--hidden');
+    })
+});
+
+// EXTRA COST ====================================================
+const extraCostBtn = document.querySelector('.extra-cost__btn');
+const planDinamicPrice = document.querySelector('.plan--dinamic-price');
+const planDinamicPricePrice = planDinamicPrice.querySelector('.plan__price__value');
+const planDinamicPricePriceSticky = planDinamicPrice.querySelector('.plan__price--sticky');
+extraCostBtn.addEventListener('click', function(){
+    if(extraCostBtn.classList.contains('extra-cost__btn--add')) {
+        planDinamicPricePrice.innerHTML = "$4.650";
+        planDinamicPricePriceSticky.innerHTML = "$4.650";
+    } else {
+        planDinamicPricePrice.innerHTML = "$4.400";
+        planDinamicPricePriceSticky.innerHTML = "$4.400";
+    }
+    planDinamicPrice.classList.add('plan--toggleBackgroundColor');
+    setTimeout(() => {
+        planDinamicPrice.classList.remove('plan--toggleBackgroundColor');
+    }, 250)
+    planDinamicPrice.classList.toggle('plan--show-extra-cost');
+    extraCostBtn.classList.toggle('extra-cost__btn--add');
+});
+
+// SHOW OTHER PLANS (MOBILE) ====================================================
+const currentPlans = document.querySelectorAll('.current-plan');
+currentPlans.forEach(currentPlan => {
+    const nextOtherPlan = currentPlan.nextElementSibling;
+    const nextNextOtherPlan = nextOtherPlan.nextElementSibling;
+    currentPlan.addEventListener('click', function(){
+        nextOtherPlan.classList.toggle('show');
+        nextNextOtherPlan.classList.toggle('show');
+    })
+})
