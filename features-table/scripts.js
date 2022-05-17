@@ -88,13 +88,108 @@ extraCostBtn.addEventListener('click', function(){
     extraCostBtn.classList.toggle('extra-cost__btn--add');
 });
 
-// SHOW OTHER PLANS (MOBILE) ====================================================
-const currentPlans = document.querySelectorAll('.current-plan');
-currentPlans.forEach(currentPlan => {
+// GENERATE OTHER PLANS (MOBILE) ====================================================
+/*The following code copies for each plan, the others plans features*/
+planCards = document.querySelectorAll('.plan-card');
+planTableContainers = document.querySelectorAll('.plan-card__table-container');
+planTableContainers.forEach( (tableContainer, itemIndex) => {
+    let otherTablesA;
+    let otherTablesB;
+    let tableATitle;
+    let tableBTitle;
+
+    if(itemIndex === 0) {
+        otherTablesA = planTableContainers[1].querySelectorAll('.plan-card__table');
+        tableATitle = planCards[1].querySelector('.plan-card__title').innerHTML;
+        otherTablesB = planTableContainers[2].querySelectorAll('.plan-card__table');
+        tableBTitle = planCards[2].querySelector('.plan-card__title').innerHTML;
+    } else if (itemIndex === 1) {
+        otherTablesA = planTableContainers[0].querySelectorAll('.plan-card__table');
+        tableATitle = planCards[0].querySelector('.plan-card__title').innerHTML;
+        otherTablesB = planTableContainers[2].querySelectorAll('.plan-card__table');
+        tableBTitle = planCards[2].querySelector('.plan-card__title').innerHTML;
+    } else if (itemIndex === 2) {
+        otherTablesA = planTableContainers[0].querySelectorAll('.plan-card__table');
+        tableATitle = planCards[0].querySelector('.plan-card__title').innerHTML;
+        otherTablesB = planTableContainers[1].querySelectorAll('.plan-card__table');
+        tableBTitle = planCards[1].querySelector('.plan-card__title').innerHTML;
+    }
+
+    const currentTables = tableContainer.querySelectorAll('.plan-card__table');
+    currentTables.forEach( (ct, ctIndex) => {
+        const currentTableTrs = ct.querySelectorAll('tbody tr');
+        let counter = 1;
+        currentTableTrs.forEach( (ctTr, ctTrIndex) => {
+            
+            if(itemIndex === 0) {
+                iA = ctTrIndex + 1;
+                iB = ctTrIndex + 1;
+            } else if (itemIndex === 1) {
+                iA = counter;
+                iB = ctTrIndex + 1;
+            } else if (itemIndex === 2) {
+                iA = counter;
+                iB = counter;
+            }
+            
+            const tableATdClone = otherTablesA[ctIndex].querySelector(`tbody tr:nth-child(${iA}) td:nth-child(2)`).cloneNode(true);
+            const tableBTdClone = otherTablesB[ctIndex].querySelector(`tbody tr:nth-child(${iB}) td:nth-child(2)`).cloneNode(true);        
+
+            counter += 3;
+
+            //TABLE TDA1
+            const divA1 = document.createElement("div");
+            divA1.classList.add('td-container');
+            divA1.innerHTML = tableATitle;
+            const tdA1 = document.createElement("td");
+            tdA1.appendChild(divA1);
+
+            //TABLE TRA
+            const trA = document.createElement("tr");
+            trA.classList.add('other-plan');
+            trA.appendChild(tdA1);
+            trA.appendChild(tableATdClone);
+
+            // =================================
+
+            //TABLE TDB1
+            const divB1 = document.createElement("div");
+            divB1.classList.add('td-container');
+            divB1.innerHTML = tableBTitle;
+            const tdB1 = document.createElement("td");
+            tdB1.appendChild(divB1);
+
+            //TABLE TRA
+            const trB = document.createElement("tr");
+            trB.classList.add('other-plan');
+            trB.appendChild(tdB1);
+            trB.appendChild(tableBTdClone);
+
+            ctTr.insertAdjacentElement("afterend", trB);
+            ctTr.insertAdjacentElement("afterend", trA);
+        });
+    });
+});
+
+// ADD TOGGLE FUNCTIONALITY FOR 'CURRENT PLANS'
+/*The current plans, are all the initial visible tr's (MOBILE)*/
+const currentPlans = document.querySelectorAll('.container-plans-mobile tbody tr:not(.other-plan)');
+currentPlans.forEach( (currentPlan, i) => {
+    currentPlan.classList.add('current-plan');
+
     const nextOtherPlan = currentPlan.nextElementSibling;
     const nextNextOtherPlan = nextOtherPlan.nextElementSibling;
     currentPlan.addEventListener('click', function(){
+
+        //hide previous visible '.other-plan'
+        const visibleOtherPlans = document.querySelectorAll('.other-plan.show');
+        if(visibleOtherPlans.length) {
+            visibleOtherPlans.forEach(visibleOtherPlan => {
+                visibleOtherPlan.classList.remove('show');
+            });
+        }
+
         nextOtherPlan.classList.toggle('show');
         nextNextOtherPlan.classList.toggle('show');
     })
-})
+});
