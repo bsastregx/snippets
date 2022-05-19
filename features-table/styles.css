@@ -269,8 +269,8 @@ span.tag {
     font-family: Graphik, Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 22px;
-    margin-bottom: 8px;
-    margin-top: 72px;
+    margin-top: 64px;
+    padding-top: 8px;
     padding-bottom: 8px;
     position: sticky;
     top: 0;
