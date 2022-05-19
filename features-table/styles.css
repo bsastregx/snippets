@@ -159,7 +159,10 @@
 /* tbody */
 .features-table tbody td,
 .plan-card__table tbody td{
-    border-top: 1px solid #d9d9d9;
+    border-top-width: 1px;
+    border-top-style:solid;
+    border-top-color: #d9d9d9;
+    transition: 0.5s border-top-color;
 }
 .features-table tbody tr:first-child td,
 .plan-card__table tbody tr:first-child td{
@@ -524,6 +527,9 @@ span.tag {
 .plan-card__table tbody tr.other-plan td {
     border-top: 0;
     padding-top: 0;
+}
+.plan-card__table tbody tr.other-plan:nth-child(3n).show + tr.current-plan td {
+    border-top-color: #FA3263;
 }
 .plan-card__table tbody tr.other-plan td:first-child .td-container{
     font-family: Graphik, Helvetica, Arial, sans-serif;
