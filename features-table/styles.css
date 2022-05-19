@@ -550,6 +550,12 @@ span.tag {
 .plan-card__table .other-plan td div {
     max-height: 0;
     transition: 0.35s all;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    /* Other transform properties here */
 }
 /*SHOW .other-plan rows*/
 .plan-card__table .other-plan.show {
@@ -560,6 +566,12 @@ span.tag {
 }
 .plan-card__table .other-plan.show td div {
     max-height: 40px;
+    -webkit-transform: translateZ(1px);
+    -moz-transform: translateZ(1px);
+    -ms-transform: translateZ(1px);
+    -o-transform: translateZ(1px);
+    transform: translateZ(1px);
+    /* Other transform properties here */
 }
 /******************** RESPONSIVE ********************/
 .container-plans-mobile {
