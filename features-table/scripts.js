@@ -88,6 +88,69 @@ extraCostBtn.addEventListener('click', function(){
     extraCostBtn.classList.toggle('extra-cost__btn--add');
 });
 
+// EXTRA COST V2 ====================================================
+// const extraCostTags = document.querySelectorAll('.tag-extra-cost[data-extra]');
+// extraCostTags.forEach(extraCostTag => {
+    
+
+//     //CREATE ELEMENTS
+//     //div .extra-cost
+//     const divExtraCost = document.createElement('div');
+//     divExtraCost.classList.add('extra-cost');
+
+//     //div .extra-cost__value-cp
+//     const divExtraCostValueCp = document.createElement('div');
+//     divExtraCostValueCp.classList.add('extra-cost__value-cp');
+
+//     //span .extra-cost__value
+//     const spanExtraCostValue = document.createElement('span');
+//     spanExtraCostValue.classList.add('extra-cost__value');
+//     spanExtraCostValue.innerHTML = extraCostTag.dataset.extra;
+
+//     //span .extra-cost__currency-perodicity
+//     const spanExtraCurrencyPeriodicity = document.createElement('span');
+//     spanExtraCurrencyPeriodicity.classList.add('extra-cost__currency-perodicity');
+//     spanExtraCurrencyPeriodicity.innerHTML = 'USD/mo';
+
+//     //button .extra-cost__btn
+//     const btnExtraCost = document.createElement('button');
+//     btnExtraCost.classList.add('extra-cost__btn','extra-cost__btn--add');
+
+//     //span .extra-cost__btn__add
+//     const spanExtraCostBtnAdd = document.createElement('span');
+//     spanExtraCostBtnAdd.classList.add('extra-cost__btn__add');
+//     spanExtraCostBtnAdd.innerHTML = 'Add';
+
+//     //span .extra-cost__btn__remove
+//     const spanExtraCostBtnRemove = document.createElement('span');
+//     spanExtraCostBtnRemove.classList.add('extra-cost__btn__remove');
+//     spanExtraCostBtnRemove.innerHTML = 'Remove';
+
+//     //div .extra-cost__triangle
+//     const divExtraCostTriangle = document.createElement('div');
+//     divExtraCostTriangle.classList.add('extra-cost__triangle');
+
+//     //ADD FUNCTIONALITY
+//     btnExtraCost.addEventListener('click', function(){
+//         if(this.classList.contains('extra-cost__btn--add')) {
+            
+//         } else {
+//             console.log('restar');
+//         }
+//         this.classList.toggle('extra-cost__btn--add');
+//     })
+
+//     //appends
+//     divExtraCostValueCp.appendChild(spanExtraCostValue);
+//     divExtraCostValueCp.appendChild(spanExtraCurrencyPeriodicity);
+//     btnExtraCost.appendChild(spanExtraCostBtnAdd);
+//     btnExtraCost.appendChild(spanExtraCostBtnRemove);
+//     divExtraCost.appendChild(divExtraCostValueCp);
+//     divExtraCost.appendChild(btnExtraCost);
+//     divExtraCost.appendChild(divExtraCostTriangle);
+//     extraCostTag.appendChild(divExtraCost);
+// });
+
 // GENERATE OTHER PLANS (MOBILE) ====================================================
 /*The following code copies for each plan, the others plans features*/
 planCards = document.querySelectorAll('.plan-card');
@@ -174,6 +237,7 @@ planTableContainers.forEach( (tableContainer, itemIndex) => {
 // ADD TOGGLE FUNCTIONALITY FOR 'CURRENT PLANS'
 /*The current plans, are all the initial visible tr's (MOBILE)*/
 const currentPlans = document.querySelectorAll('.container-plans-mobile tbody tr:not(.other-plan)');
+const tips = document.querySelectorAll('.tip');
 currentPlans.forEach( (currentPlan, i) => {
     currentPlan.classList.add('current-plan');
 
@@ -191,5 +255,12 @@ currentPlans.forEach( (currentPlan, i) => {
 
         nextOtherPlan.classList.toggle('show');
         nextNextOtherPlan.classList.toggle('show');
+        tips.forEach(tip => {
+            tip.classList.add('tip--hidden');
+            setTimeout(function(){
+                tip.classList.add('tip--height0');
+            },250);
+            
+        })
     })
 });
