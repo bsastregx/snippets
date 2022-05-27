@@ -12,28 +12,31 @@
 
     <!-- CONTAINER PLANS (DESKTOP) -->
     <div class="container container-plans-desktop">
-        <div class="compare-plans-container">
-            <h2 class="compare-plans">Comparar Planes <img src="https://www.genexus.com/media/images/arrow-down.svg?timestamp=20220519193850" alt="arrow down"></h2>
+        <div class="go-to-plans-container">
+            <h2 class="go-to-plans go-to-plans--professional">Comparar Planes <img src="https://www.genexus.com/media/images/arrow-down.svg?timestamp=20220519193850" alt="arrow down"></h2>
         </div>
         <div id="features-tables-top"></div>
-        <div class="plans-header-container">
+        <div class="plans-header-container"><!-- do not move -->
             <div class="plans-header">
                 <div class="plan plan--dinamic-price">
                     <div class="plan__container">
                         <h3 class="plan__title">
                             For Startups
                             <span class="plan__price--sticky">
-                                $5.222
+                                $u5.222
                             </span>
                         </h3>
                         <span class="plan__price">
                             <div class="plan__price__value">
-                                $5.222
+                                $u5.222
                             </div>
                             <div class="plan_cp">
-                                <span class="plan__currency">USD</span>
-                                <span class="plan__periodicity">/mo </span>
+                                <span class="plan__currency"></span>
+                                <span class="plan__periodicity">/mes </span>
                             </div>
+                        </span>
+                        <span class="plan__payment-period">
+                            Primer año, pago mensual
                         </span>
                     </div>
                 </div>
@@ -42,17 +45,20 @@
                         <h3 class="plan__title">
                             For ISV
                             <span class="plan__price--sticky">
-                                $10.400
+                                $u10.400
                             </span>
                         </h3>
                         <span class="plan__price">
                             <div>
-                                $10.400
+                                $u10.400
                             </div>
                             <div class="plan_cp">
-                                <span class="plan__currency">USD</span>
-                                <span class="plan__periodicity">/mo </span>
+                                <span class="plan__currency"></span>
+                                <span class="plan__periodicity">/mes </span>
                             </div>
+                        </span>
+                        <span class="plan__payment-period">
+                            Plan anual de pago mensual
                         </span>
                     </div>
                 </div>
@@ -73,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="plans-header-container-bottom-reference"></div>
+        <div class="plans-header-container-bottom-reference"></div><!-- do not move -->
 
         <table class="features-table">
             <thead>
@@ -509,7 +515,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td><div class="td-container tal"><img class="go-top" src="https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958" alt="arrow up">  </div></td>
+                    <td><div class="td-container tal"><img class="go-top" data-target-class="go-to-plans--professional" src="https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958" alt="arrow up">  </div></td>
                     <td><div class="td-container"><a href="" type="button" class="button button--primary" disabled>Select Plan</a></div></td>
                     <td><div class="td-container"><a href="" type="button" class="button button--primary" disabled>Select Plan</a></div></td>
                     <td><div class="td-container"><a href="" type="button" class="button button--secondary" disabled>Contact Sales</a></div></td>
@@ -518,23 +524,28 @@
         </table>
     </div> <!-- /.CONTAINER PLANS (DESKTOP) -->
 
-    <div class="container container-plans-mobile">
+    <div class="container container-plans-mobile container-plans-mobile--professional">
         
         <!-- GENEXUS FOR STARUPS (MOBILE) -->
-        <article class="plan-card">
+        <article class="plan-card plan-card--professional">
             <h3 class="plan-card__title">GeneXus For Startups</h3>
             <p class="plan-card__description">
                 Pensado para nuevas empresas, <br>con pequeños equipos y grandes ideas
             </p>
-            <div class="plan-price-container">
-                <span class="plan__price">
-                    <div>
-                        $5.222
-                    </div>
-                    <div class="plan_cp">
-                        <span class="plan__currency">$u</span>
-                        <span class="plan__periodicity">/mo </span>
-                    </div>
+            <div>
+                <div class="plan-price-container">
+                    <span class="plan__price">
+                        <div>
+                            $u5.222
+                        </div>
+                        <div class="plan_cp">
+                            <span class="plan__currency"></span>
+                            <span class="plan__periodicity">/mo </span>
+                        </div>
+                    </span>
+                </div>
+                <span class="plan__payment-period">
+                    Primer año, pago mensual
                 </span>
             </div>
             <p class="toggle-plan-features collapsed">
@@ -545,7 +556,7 @@
                     - Ocultar características del plan
                 </span>
             </p>
-            <div class="plan-card__table-container collapsed">
+            <div class="plan-card__table-container plan-card__table-container--professional collapsed">
                 <div class="tip">
                     <i class="fa-solid fa-code-compare"></i>
                     Toca en cualquier item para comparar planes
@@ -1289,20 +1300,25 @@
         <!-- /GENEXUS FOR STARUPS (MOBILE) -->
 
         <!-- GENEXUS FOR ISV (MOBILE) -->
-        <article class="plan-card">
+        <article class="plan-card plan-card--professional">
             <h3 class="plan-card__title">GeneXus For ISV</h3>
             <p class="plan-card__description">
                 Un producto para casas de software que brindan servicios y crean aplicaciones multiplataforma para sus clientes
             </p>
-            <div class="plan-price-container">
-                <span class="plan__price">
-                    <div>
-                        $u10.400
-                    </div>
-                    <div class="plan_cp">
-                        <span class="plan__currency">USD</span>
-                        <span class="plan__periodicity">/mo </span>
-                    </div>
+            <div>
+                <div class="plan-price-container">
+                    <span class="plan__price">
+                        <div>
+                            $u10.400
+                        </div>
+                        <div class="plan_cp">
+                            <span class="plan__currency"></span>
+                            <span class="plan__periodicity">/mo </span>
+                        </div>
+                    </span>
+                </div>
+                <span class="plan__payment-period">
+                    Plan anual de pago mensual
                 </span>
             </div>
             <p class="toggle-plan-features collapsed">
@@ -1313,7 +1329,7 @@
                     - Ocultar características del plan
                 </span>
             </p>
-            <div class="plan-card__table-container collapsed">
+            <div class="plan-card__table-container plan-card__table-container--professional collapsed">
                 <div class="tip">
                     <i class="fa-solid fa-code-compare"></i>
                     Toca en cualquier item para comparar planes
@@ -2057,7 +2073,7 @@
         <!-- /GENEXUS FOR ISV (MOBILE) -->
 
         <!-- GENEXUS FOR ENTERPRISE (MOBILE) -->
-        <article class="plan-card">
+        <article class="plan-card plan-card--professional">
             <h3 class="plan-card__title">GeneXus For Enterprise</h3>
             <p class="plan-card__description">
                 Plan para empresas exigentes, que buscan la excelencia y la productividad cuando desarrollan Software.
@@ -2077,7 +2093,7 @@
                     - Ocultar características del plan
                 </span>
             </p>
-            <div class="plan-card__table-container collapsed">
+            <div class="plan-card__table-container plan-card__table-container--professional collapsed">
                 <div class="tip">
                     <i class="fa-solid fa-code-compare"></i>
                     Toca en cualquier item para comparar planes

@@ -29,12 +29,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-/*compare plans*/
-.compare-plans-container {
+/*go to plans*/
+.go-to-plans-container {
     display: flex;
     justify-content: center;
 }
-.compare-plans {
+.go-to-plans {
     font-family: Rubik, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -45,10 +45,10 @@ body {
     padding: 8px;
     cursor: pointer;
 }
-.compare-plans:hover img {
+.go-to-plans:hover img {
     transform: scale(1.25);
 }
-.compare-plans img {
+.go-to-plans img {
     margin-left: 8px;
 }
 /******************** PLANS HEADER (DESKTOP) ********************/
@@ -59,6 +59,22 @@ body {
     top: 100px;
     background: rgba(255,255,255,0.8);
     z-index: 1;
+}
+.plans-header-container--compact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.plans-header-container--compact .plan__price {
+    font-size: 36px;
+}
+.plans-header-container--compact .plans-header {
+    width: 40%;
+}
+.plans-header-container--compact .plans-header .plan:nth-child(1){
+    width: 100%;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #B5B5B5;
 }
 .plans-header {
     display: flex;
@@ -99,6 +115,13 @@ body {
     font-weight: 600;
     justify-content: center;
 }
+.plan__payment-period {
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 8px;
+    display: inline-block;
+}
 /*plan price sticky*/
 .plan__price--sticky {
     font-size: 0;
@@ -109,6 +132,9 @@ body {
 }
 .plans-header-container.sticky .plan__price--sticky{
     font-size: inherit;
+}
+.plans-header-container.sticky .plan__payment-period {
+    display: none;
 }
 /* /end of plan price sticky */
 .plan_cp {
@@ -147,6 +173,20 @@ body {
     border-collapse: collapse;
     margin-bottom: 32px;
 }
+.features-table--compact {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.features-table--compact thead .feature {
+    width: 60% !important;
+}
+.features-table--compact thead .plan {
+    width: 40% !important;
+}
+.features-table--compact tbody td:nth-child(2) {
+    padding-right: 0;
+}
 .features-table:last-child {
     margin-bottom: 0;
 }
@@ -158,6 +198,7 @@ body {
 }
 .features-table thead .feature{
     width: 40%;
+    padding-bottom: 20px;
 }
 .features-table thead .plan{
     width: 20%;
@@ -179,6 +220,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.features-table.features-table--compact tbody .td-container{
+    justify-content: end;
 }
 .features-table tbody td:first-child .td-container {
     justify-content: flex-start;
@@ -218,6 +262,9 @@ span.tag {
 /* check */
 .check {
     padding: 0 8px;
+}
+.features-table--compact .check {
+    padding-right: 0;
 }
 /*buttons*/
 .features-table .button,
@@ -365,15 +412,18 @@ span.tag {
     justify-content: flex-end;
 }
 .plan-card__table .feature {
-    width: calc(100% - 150px);
+    width: calc(100% - 170px);
     padding-top: 32px;
     padding-bottom: 16px;
 }   
 .plan-card__table .check-col {
-    width: 150px;
+    width: 170px;
+}
+.plan-card__table tbody td:nth-child(1) {
+    padding-right: 8px;
 }
 .plan-card__table tbody td:nth-child(2) {
-    text-align: right   ;
+    text-align: right;
 }
 .plan-card__table span.tag {
     padding-top: 0;
@@ -521,10 +571,10 @@ span.tag {
 .tip {
     font-family: Rubik, Helvetica, Arial, sans-serif;
     font-size: 16px;
-    background-color: aquamarine;
+    background-color: rgb(235,235,254);
     padding: 16px;
     border-radius: 4px;
-    border: 1px solid rgb(49, 207, 154);
+    border: 1px solid rgb(105,110,242);
     transition: 0.25s all;
     max-height: 80px;
     opacity: 1;
@@ -565,6 +615,11 @@ span.tag {
 /******************** RESPONSIVE ********************/
 .container-plans-mobile {
     display: none;
+}
+@media screen and (max-width: 1439px) {
+    .plan__price {
+        font-size: 26px;
+    }
 }
 @media screen and (max-width: 992px) {
     .container-plans-mobile {

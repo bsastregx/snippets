@@ -12,11 +12,11 @@
 
     <!-- CONTAINER PLANS (DESKTOP) -->
     <div class="container container-plans-desktop">
-        <div class="compare-plans-container">
-            <h2 class="compare-plans">Compare Plans <img src="https://www.genexus.com/media/images/arrow-down.svg?timestamp=20220519193850" alt="arrow down"></h2>
+        <div class="go-to-plans-container">
+            <h2 class="go-to-plans go-to-plans--professional">Comparar Planos <img src="https://www.genexus.com/media/images/arrow-down.svg?timestamp=20220519193850" alt="arrow down"></h2>
         </div>
         <div id="features-tables-top"></div>
-        <div class="plans-header-container">
+        <div class="plans-header-container"><!-- do not move -->
             <div class="plans-header">
                 <div class="plan plan--dinamic-price">
                     <div class="plan__container">
@@ -34,6 +34,9 @@
                                 <span class="plan__currency"></span>
                                 <span class="plan__periodicity">/mês</span>
                             </div>
+                        </span>
+                        <span class="plan__payment-period">
+                            Primeiro ano,<br> pagamento mensal
                         </span>
                     </div>
                 </div>
@@ -54,6 +57,9 @@
                                 <span class="plan__periodicity">/mês</span>
                             </div>
                         </span>
+                        <span class="plan__payment-period">
+                            Plano anual de pagamento mensal
+                        </span>
                     </div>
                 </div>
                 <div class="plan">
@@ -73,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="plans-header-container-bottom-reference"></div>
+        <div class="plans-header-container-bottom-reference"></div><!-- do not move -->
 
         <table class="features-table">
             <thead>
@@ -372,13 +378,13 @@
                 <tr>
                     <td><div class="td-container">Suíte BPM</div></td>
                     <td><div class="td-container"></div></td>
-                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 users)</div></td>
+                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 usuários)</div></td>
                     <td><div class="td-container"><span class="tag">Custo Adicional</span> (Ilimitada)</div></td>
                 </tr>
                 <tr>
                     <td><div class="td-container">Suite de Reporting</div></td>
                     <td><div class="td-container"></div></td>
-                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 users)</div></td>
+                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 usuários)</div></td>
                     <td><div class="td-container"><span class="tag">Custo Adicional</span> (Ilimitada)</div></td>
 
                 </tr>
@@ -453,8 +459,8 @@
                 <tr>
                     <td><div class="td-container">Certificação GeneXus Júnior</div></td>
                     <td><div class="td-container"></div></td>
-                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (1 user)</div></td>
-                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 users)</div></td>
+                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (1 usuário)</div></td>
+                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 usuários)</div></td>
                 </tr>
             </tbody>
         </table>
@@ -476,9 +482,9 @@
                     <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"></div></td>
                 </tr>
                 <tr>
-                    <td><div class="td-container">"Suporte assistido</div></td>
+                    <td><div class="td-container">Suporte assistido</div></td>
                     <td><div class="td-container"></div></td>
-                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (12 issues / year)</div></td>
+                    <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (12 issues / ano)</div></td>
                     <td><div class="td-container"><img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (Ilimitada)</div></td>
                 </tr>
                 <tr>
@@ -509,7 +515,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td><div class="td-container tal"><img class="go-top" src="https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958" alt="arrow up">  </div></td>
+                    <td><div class="td-container tal"><img class="go-top" data-target-class="go-to-plans--professional" src="https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958" alt="arrow up">  </div></td>
                     <td><div class="td-container"><a href="" type="button" class="button button--primary" disabled>Seleccione o Plano</a></div></td>
                     <td><div class="td-container"><a href="" type="button" class="button button--primary" disabled>Seleccione o Plano</a></div></td>
                     <td><div class="td-container"><a href="" type="button" class="button button--secondary" disabled>Contate Vendas</a></div></td>
@@ -518,23 +524,28 @@
         </table>
     </div> <!-- /.CONTAINER PLANS (DESKTOP) -->
 
-    <div class="container container-plans-mobile">
+    <div class="container container-plans-mobile container-plans-mobile--professional">
         
         <!-- GENEXUS FOR STARUPS (MOBILE) -->
-        <article class="plan-card">
+        <article class="plan-card plan-card--professional">
             <h3 class="plan-card__title">GeneXus For Startups</h3>
             <p class="plan-card__description">
                 Projetado para novos negócios<br> com equipes pequenas e grandes ideias
             </p>
-            <div class="plan-price-container">
-                <span class="plan__price">
-                    <div>
-                        R$864
-                    </div>
-                    <div class="plan_cp">
-                        <span class="plan__currency"></span>
-                        <span class="plan__periodicity">/mês</span>
-                    </div>
+            <div>
+                <div class="plan-price-container">
+                    <span class="plan__price">
+                        <div>
+                            R$864
+                        </div>
+                        <div class="plan_cp">
+                            <span class="plan__currency"></span>
+                            <span class="plan__periodicity">/mês</span>
+                        </div>
+                    </span>
+                </div>
+                <span class="plan__payment-period">
+                    Primeiro ano, pagamento mensal
                 </span>
             </div>
             <p class="toggle-plan-features collapsed">
@@ -546,7 +557,7 @@
 
                 </span>
             </p>
-            <div class="plan-card__table-container collapsed">
+            <div class="plan-card__table-container plan-card__table-container--professional collapsed">
                 <div class="tip">
                     <i class="fa-solid fa-code-compare"></i>
                     Toque em qualquer item para comparar planos.
@@ -1291,20 +1302,25 @@
         <!-- /GENEXUS FOR STARUPS (MOBILE) -->
 
         <!-- GENEXUS FOR ISV (MOBILE) -->
-        <article class="plan-card">
+        <article class="plan-card plan-card--professional">
             <h3 class="plan-card__title">GeneXus For ISV</h3>
             <p class="plan-card__description">
                 Um produto para Software Houses que fornecem serviços e criam aplicativos multiplataforma para seus clientes
             </p>
-            <div class="plan-price-container">
-                <span class="plan__price">
-                    <div>
-                        R$1.555
-                    </div>
-                    <div class="plan_cp">
-                        <span class="plan__currency"></span>
-                        <span class="plan__periodicity">/mês</span>
-                    </div>
+            <div>
+                <div class="plan-price-container">
+                    <span class="plan__price">
+                        <div>
+                            R$1.555
+                        </div>
+                        <div class="plan_cp">
+                            <span class="plan__currency"></span>
+                            <span class="plan__periodicity">/mês</span>
+                        </div>
+                    </span>
+                </div>
+                <span class="plan__payment-period">
+                    Plano anual de pagamento mensal
                 </span>
             </div>
             <p class="toggle-plan-features collapsed">
@@ -1315,7 +1331,7 @@
                     - Ocultar recursos do plano
                 </span>
             </p>
-            <div class="plan-card__table-container collapsed">
+            <div class="plan-card__table-container plan-card__table-container--professional collapsed">
                 <div class="tip">
                     <i class="fa-solid fa-code-compare"></i>
                     Toque em qualquer item para comparar planos.
@@ -1830,7 +1846,7 @@
                             </td>
                             <td>
                                 <div class="td-container">
-                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 users)
+                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 usuários)
                                 </div>
                             </td>
                         </tr>
@@ -1842,7 +1858,7 @@
                             </td>
                             <td>
                                 <div class="td-container">
-                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 users)
+                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 usuários)
                                 </div>
                             </td>
                         </tr>
@@ -1966,7 +1982,7 @@
                             </td>
                             <td>
                                 <div class="td-container">
-                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (1 user)
+                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (1 usuário)
                                 </div>
                             </td>
                         </tr>
@@ -2004,7 +2020,7 @@
                             </td>
                             <td>
                                 <div class="td-container">
-                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (12 issues / year)
+                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (12 issues / ano)
                                 </div>
                             </td>
                         </tr>
@@ -2059,7 +2075,7 @@
         <!-- /GENEXUS FOR ISV (MOBILE) -->
 
         <!-- GENEXUS FOR ENTERPRISE (MOBILE) -->
-        <article class="plan-card">
+        <article class="plan-card plan-card--professional">
             <h3 class="plan-card__title">GeneXus For Enterprise</h3>
             <p class="plan-card__description">
                 Plano para empresas exigentes que buscam a excelência e a produtividade no desenvolvimento de software.
@@ -2079,7 +2095,7 @@
                     - Ocultar recursos do plano
                 </span>
             </p>
-            <div class="plan-card__table-container collapsed">
+            <div class="plan-card__table-container plan-card__table-container--professional collapsed">
                 <div class="tip">
                     <i class="fa-solid fa-code-compare"></i>
                     Toque em qualquer item para comparar planos.
@@ -2730,7 +2746,7 @@
                             </td>
                             <td>
                                 <div class="td-container">
-                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 users)
+                                    <img src="https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225" class="check" alt="check"> (5 usuários)
                                 </div>
                             </td>
                         </tr>
