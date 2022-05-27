@@ -1,3 +1,4 @@
+<script>
 //COMPARE PLANS ====================================================
 
 goToPlans = document.querySelectorAll(".go-to-plans");
@@ -11,22 +12,23 @@ goToPlans.forEach(goToPlan => {
 
 //ANIMATE STICKY PLANS HEADER ====================================================
 
-const pdct = document.querySelector('.plans-header-container-bottom-reference');
-const pdc = document.querySelector('.plans-header-container');
-
-const observer = new window.IntersectionObserver(([entry]) => {
-if (entry.isIntersecting) {
-    pdc.classList.remove('sticky');
-    return
-}
-if (entry.boundingClientRect.top <= 0) {
-    pdc.classList.add('sticky');
-}
-}, {
-root: null,
-threshold: 0,
+const pdctS = document.querySelectorAll('.plans-header-container-bottom-reference');
+pdctS.forEach(pdct => {
+    const pdc = pdct.previousElementSibling;
+    const observer = new window.IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+            pdc.classList.remove('sticky');
+            return
+        }
+        if (entry.boundingClientRect.top <= 0) {
+            pdc.classList.add('sticky');
+        }
+        }, {
+        root: null,
+        threshold: 0,
+        });
+        observer.observe(pdct)
 });
-observer.observe(pdct)
 
 //UP ARROW (GO UP TO STICKY PLANS HEADER) ====================================================
 
@@ -187,3 +189,4 @@ currentPlans.forEach( (currentPlan, i) => {
         });
     });
 });
+</script>

@@ -29,9 +29,6 @@ pdctS.forEach(pdct => {
         observer.observe(pdct)
 });
 
-
-
-
 //UP ARROW (GO UP TO STICKY PLANS HEADER) ====================================================
 
 const goUps = document.querySelectorAll(".go-top"); 
