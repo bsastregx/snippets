@@ -93,6 +93,9 @@ body {
     transition: all 0.25s;
     text-align: center;
 }
+.plans-header .plan--align-top {
+    justify-content: flex-start;
+}
 .plans-header .plan:nth-child(2) {
     border-color: #FA3263
 }
@@ -121,6 +124,7 @@ body {
     font-size: 14px;
     margin-top: 8px;
     display: inline-block;
+    color: #5A5F63;
 }
 /*plan price sticky*/
 .plan__price--sticky {
@@ -314,3 +318,4 @@ span.tag {
 .go-top:hover {
     transform: scale(1.25);
 }
+.end-desktop{}
