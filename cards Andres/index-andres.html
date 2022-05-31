@@ -1,0 +1,93 @@
+<div id="plans-toggler">
+    <a class="active" id="plans-btn--1">Professional</a>
+    <a id="plans-btn--2">Beginners</a>
+</div>
+
+<style type="text/css">
+
+#plans-toggler{
+    border-radius: 100px;
+    padding: .75rem .5rem;
+    background-color:#eee;
+    font-family: Rubik;
+    display:block
+}
+#plans-toggler a{
+    font-size:1rem;
+    color:#9698A0;
+    border-radius: 4rem;
+    padding: .5rem 1rem;
+    line-height:1.375rem;
+    background-color:#eee;
+    text-decoration:none;
+    cursor: pointer;
+}
+#plans-toggler a.active{
+    color:#111;
+    background-color:#fff;
+    padding: .5rem 1rem;
+}
+
+
+/*
+// Cards controller
+*/
+.I68476, .I68551{
+    scroll-snap-type: x mandatory;
+}
+.I68476 .sector, .I68551 .sector {
+    scroll-snap-align: start;
+    scroll-snap-align: center;
+}
+
+/*Scroll bar*/
+/* width */
+section::-webkit-scrollbar {
+    width: 20px;
+}
+/* Track */
+section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+/* Handle */
+section::-webkit-scrollbar-thumb {
+    background: rgb(212,212,212); 
+    border-radius: 10px;
+}
+/* Handle on hover */
+section::-webkit-scrollbar-thumb:hover {
+    background: rgb(188, 188, 188); 
+}
+</style>
+
+<script>
+
+document.getElementById('plans-btn--1').addEventListener('click', function () {
+
+    document.getElementById('plans-btn--2').classList.remove('active');
+    this.classList.add('active');
+    
+    // Pro
+    document.getElementsByClassName('I70247')[0].style.display = 'block';
+    
+    // Beg
+    document.getElementsByClassName('I70246')[0].style.display = 'none';
+    console.log('Show Plans professional');
+});
+
+
+document.getElementById('plans-btn--2').addEventListener('click', function () {
+
+    document.getElementById('plans-btn--1').classList.remove('active');
+    this.classList.add('active');
+    
+    // Pro
+    document.getElementsByClassName('I70247')[0].style.display = 'none';
+
+    // Beg
+    document.getElementsByClassName('I70246')[0].style.display = 'block';
+    console.log('Show Plans beginners');
+});
+
+</script>

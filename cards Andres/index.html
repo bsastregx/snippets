@@ -1,0 +1,71 @@
+<div id="plans-toggler">
+    <a class="active" href="javascript:void();" id="plans-btn--1">Professional</a>
+    <a href="javascript:void();" id="plans-btn--2">Begginers</a>
+</div>
+
+<style type="text/css">
+#plans-toggler {
+    border-radius: 100px;
+    padding: .75rem .5rem;
+    background-color:#eee;
+    font-family: Rubik;
+    display:block
+}
+#plans-toggler a {
+    font-size:1rem;
+    color:#9698A0;
+    border-radius: 4rem;
+    padding: .5rem 1rem;
+    line-height:1.375rem;
+    background-color:#eee;
+    text-decoration:none;
+}
+#plans-toggler a.active {
+    color:#111;
+    background-color:#fff;
+    padding: .5rem 1rem;
+}
+/*
+// Cards controller
+*/
+.I68476, .I68551{
+    scroll-snap-type: x mandatory;
+}   
+.I68476 .sector,
+.I68551 .sector {
+    scroll-snap-align: start;
+    scroll-snap-align: center;
+}
+</style>
+
+
+<script>
+document.getElementById('plans-btn--1').addEventListener('click', function () {
+
+    document.getElementById('plans-btn--2').classList.remove('active');
+    this.classList.add('active');
+    
+    // Pro
+    document.getElementsByClassName('I70247')[0].style.display = 'block';
+    
+    // Beg
+    document.getElementsByClassName('I70246')[0].style.display = 'none';
+
+    console.log('Show Plans professional');
+});
+
+
+document.getElementById('plans-btn--2').addEventListener('click', function () {
+
+    document.getElementById('plans-btn--1').classList.remove('active');
+    this.classList.add('active');
+
+    // Pro
+    document.getElementsByClassName('I70247')[0].style.display = 'none';
+
+    // Beg
+    document.getElementsByClassName('I70246')[0].style.display = 'block';
+
+    console.log('Show Plans beginners');
+});
+</script>

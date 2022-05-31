@@ -1,0 +1,32 @@
+main.region.I20814 {
+    width: 100%;
+}
+div.sector.I70247 {
+    width: 100%; (checked)
+}
+.sector.I70247 > .viewport {
+    justify-content: center; (checked)
+}
+
+==============================
+
+LARGE
+
+Principal {
+    with: 100%; --> bien!
+}
+gwds__plans-profesional (external) {
+    with: 100%; --> bien!
+    alineacion horizontal: centrado
+}
+gwds__plans-profesional (interno) > region_1 {
+    padding-bottom: 1rem;
+}
+
+gwds__plans-beginners (external) {
+    with: 100%; --> bien!
+    alineacion horizontal: centrado
+}
+gwds__plans-beginners (interno) > region_1 {
+    padding-bottom: 1rem;
+}
