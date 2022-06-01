@@ -29,6 +29,10 @@ body {
     max-width: 1230px;
     margin: 0 auto;
 }
+/*helper classes*/
+.pr-0 {
+    padding-right: 0 !important;
+}
 /*go to plans*/
 .go-to-plans-container {
     display: flex;
