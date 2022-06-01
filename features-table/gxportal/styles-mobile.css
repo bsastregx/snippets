@@ -299,8 +299,8 @@
 }
 /******************** RESPONSIVE ********************/
 .container-plans-mobile {
-    padding-top: 32px;
     display: none;
+    padding-top: 32px;
 }
 @media screen and (max-width: 1439px) {
     .plan__price {

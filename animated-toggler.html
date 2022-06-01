@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Button</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <style>
+        #toggler{
+            border-radius: 100px;
+            padding: .75rem .5rem;
+            background-color:#eee;
+            font-family: Rubik;
+            display:inline-block;
+            position: relative;
+        }
+        #toggler a {
+            font-size:1rem;
+            color:#9698A0;
+            border-radius: 4rem;
+            padding: .5rem 1rem;
+            line-height:1.375rem;
+            text-decoration:none;
+            cursor: pointer;
+            transition: 0.25s color;
+            position: relative;
+            z-index: 1;
+        }
+        #toggler a.active{
+            color:#111;
+        }
+        #toggler .indicator {
+            position: absolute;
+            height: 34px;
+            width: 128px;
+            background-color: #fff;
+            top: 6px;
+            left: 6px;
+            z-index: 0;
+            border-radius: 17px;
+            transition: 0.25s all;
+        }
+    </style>
+</head>
+<body>
+    <div id="toggler">
+        <a class="active" id="toggler-btn--1">Professional</a>
+        <a id="toggler-btn--2">Intermediate</a>
+        <a id="toggler-btn--3">Beginners</a>
+        <span class="indicator"></span>
+    </div>
+
+    <script>
+        const toggler = document.querySelector('#toggler');
+        const indicator = toggler.querySelector('.indicator');
+        const togglerButtons = document.querySelectorAll('#toggler a');
+        togglerButtons.forEach(button  => {
+            button.addEventListener('click', function(){
+                const btnWidth = this.offsetWidth;
+                const btnOffsetLeft = this.offsetLeft;
+                indicator.style.width = btnWidth + 'px';
+                indicator.style.left = btnOffsetLeft + 'px';
+
+                toggler.querySelector('.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        })
+    </script>
+
+</body>
+</html>

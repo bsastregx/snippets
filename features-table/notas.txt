@@ -8,6 +8,3 @@ imagen arrow up:
 https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958
 
 #contact-gisela
-
-
-more info separarlo a 24px del boton
