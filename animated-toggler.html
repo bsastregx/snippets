@@ -56,7 +56,7 @@
     <script>
         const toggler = document.querySelector('#toggler');
         const indicator = toggler.querySelector('.indicator');
-        const togglerButtons = document.querySelectorAll('#toggler a');
+        const togglerButtons = toggler.querySelectorAll('a');
         togglerButtons.forEach(button  => {
             button.addEventListener('click', function(){
                 const btnWidth = this.offsetWidth;

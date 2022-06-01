@@ -1,10 +1,17 @@
-<div id="plans-toggler"><a class="active" id="plans-btn--1">Professional</a> <a id="plans-btn--2">Beginners</a></div>
-<style type="text/css">#plans-toggler{
+<div id="plans-toggler">
+    <a class="active" id="plans-btn--1">Professional</a>
+    <a id="plans-btn--2">Beginners</a>
+    <span class="indicator"></span>
+</div>
+
+<style type="text/css">
+#plans-toggler{
     border-radius: 100px;
     padding: .75rem .5rem;
     background-color:#eee;
     font-family: Rubik;
-    display:block
+    display:inline-block;
+    position: relative;
 }
 #plans-toggler a{
     font-size:1rem;
@@ -12,14 +19,25 @@
     border-radius: 4rem;
     padding: .5rem 1rem;
     line-height:1.375rem;
-    background-color:#eee;
     text-decoration:none;
     cursor: pointer;
+    transition: 0.25s color;
+    position: relative;
+    z-index: 1;
 }
 #plans-toggler a.active{
     color:#111;
-    background-color:#fff;
-    padding: .5rem 1rem;
+}
+#plans-toggler .indicator {
+    position: absolute;
+    height: 34px;
+    width: 128px;
+    background-color: #fff;
+    top: 6px;
+    left: 6px;
+    z-index: 0;
+    border-radius: 17px;
+    transition: 0.25s all;
 }
 @media (max-width: 992px) {
     .I70246,.I70247  {
@@ -61,6 +79,23 @@ section::-webkit-scrollbar-thumb:hover {
 </style>
 <script>
 
+/*TOGGLER*/
+const plansToggler = document.querySelector('#plans-toggler');
+const indicator = plansToggler.querySelector('.indicator');
+const togglerButtons = plansToggler.querySelectorAll('a');
+togglerButtons.forEach(button  => {
+    button.addEventListener('click', function(){
+        const btnWidth = this.offsetWidth;
+        const btnOffsetLeft = this.offsetLeft;
+        indicator.style.width = btnWidth + 'px';
+        indicator.style.left = btnOffsetLeft + 'px';
+
+        plansToggler.querySelector('.active').classList.remove('active');
+        this.classList.add('active');
+    });
+});
+
+/*PLANS*/
 document.getElementById('plans-btn--1').addEventListener('click', function () {
 
     document.getElementById('plans-btn--2').classList.remove('active');
@@ -75,7 +110,6 @@ document.getElementById('plans-btn--1').addEventListener('click', function () {
     document.getElementsByClassName('I70415')[0].style.display = 'none';
     console.log('Show Plans professional');
 });
-
 
 document.getElementById('plans-btn--2').addEventListener('click', function () {
 
