@@ -49,9 +49,15 @@ const togglePlanFeatures = document.querySelectorAll('.toggle-plan-features');
 togglePlanFeatures.forEach(tpf => {
     tpf.addEventListener('click', function(){
         const card = tpf.parentElement;
+        const cardTitle = card.querySelector('.plan-card__title');
         const tableContainer = card.querySelector('.plan-card__table-container');
         tableContainer.classList.toggle('collapsed');
         tpf.classList.toggle('collapsed');
+        if(tpf.classList.contains('collapsed')) {
+            cardTitle.classList.remove('sticky');
+        } else {
+            cardTitle.classList.add('sticky');
+        }
     });
 });
 
@@ -60,10 +66,19 @@ togglePlanFeatures.forEach(tpf => {
 const hidePlanFeatures = document.querySelectorAll('.hide-plan-features');
 hidePlanFeatures.forEach(hpf => {
     hpf.addEventListener('click', function(){
+        const planCard = hpf.closest('.plan-card');
+        const planCardTitle = planCard.querySelector('.plan-card__title');
+        const planCardOffsetTop = planCard.getBoundingClientRect().top + document.documentElement.scrollTop - 80;
+        //scroll to plan card
+        window.scroll({
+            top: planCardOffsetTop
+        });
+
         const tableContainer = hpf.parentElement;
         tableContainer.classList.add('collapsed');
         const togglePlanFeatures = tableContainer.parentElement.querySelector('.toggle-plan-features');
         togglePlanFeatures.classList.add('collapsed');
+        planCardTitle.classList.remove('sticky');
     })
 });
 
@@ -168,17 +183,29 @@ currentPlans.forEach( (currentPlan, i) => {
     const nextOtherPlan = currentPlan.nextElementSibling;
     const nextNextOtherPlan = nextOtherPlan.nextElementSibling;
     currentPlan.addEventListener('click', function(){
+        
+        const openTr = document.querySelector('tr.open');
 
-        //hide previous visible '.other-plan'
-        const visibleOtherPlans = document.querySelectorAll('.other-plan.show');
-        if(visibleOtherPlans.length) {
-            visibleOtherPlans.forEach(visibleOtherPlan => {
-                visibleOtherPlan.classList.remove('show');
-            });
+        if(this.classList.contains('open')){
+            this.classList.remove('open');
+            nextOtherPlan.classList.remove('show');
+            nextNextOtherPlan.classList.remove('show');
+        } else {
+            //hide previous '.open' tr
+            if(openTr) {
+                openTr.classList.remove('open');
+            }
+            this.classList.add('open');
+            //hide previous visible '.other-plan'
+            const visibleOtherPlans = document.querySelectorAll('.other-plan.show');
+            if(visibleOtherPlans.length) {
+                visibleOtherPlans.forEach(visibleOtherPlan => {
+                    visibleOtherPlan.classList.remove('show');
+                });
+            }
+            nextOtherPlan.classList.add('show');
+            nextNextOtherPlan.classList.add('show');
         }
-
-        nextOtherPlan.classList.toggle('show');
-        nextNextOtherPlan.classList.toggle('show');
         
         tips.forEach(tip => {
             tip.classList.add('tip--hidden');

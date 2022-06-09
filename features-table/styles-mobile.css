@@ -20,10 +20,14 @@
     margin-top: 64px;
     padding-top: 8px;
     padding-bottom: 8px;
-    position: sticky;
-    top: 0;
     z-index: 99;
     background-color: #FFFFFF;
+    transition: 0.25s top;
+    top:0;
+}
+.plan-card__title.sticky {
+    position: sticky;
+    top: 70px;
 }
 .plan-card__description {
     font-family: Rubik, Helvetica, Arial, sans-serif;
@@ -313,6 +317,30 @@
     }
     .container-plans-desktop {
         display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .plan-card__table .check-col {
+        width: 80px;
+    }
+    .plan-card__table .feature {
+        width: calc(100% - 80px);
+    }
+    .plan-card__table tbody td:nth-child(2) .td-container {
+        flex-direction: column;
+        align-items: end;
+    }
+    .plan-card__table span.tag {
+        margin: 0;
+    }
+    .plan-card__table .check {
+        padding: 0;
+    }
+    span.tag {
+        font-size: 10px;
+    }
+    .plan-card__table tbody td {
+        padding: 8.5px 0;
     }
 }
 .end-mobile{}

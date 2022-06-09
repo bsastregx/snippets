@@ -9,7 +9,4 @@ https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958
 
 #contact-gisela
 
-- Traducir al espanol el titulo y subtitulo. Quedaron en ingles.
 - Cambiar la ubicacion de la flecha que sube, segun referencia de Dribble.
-- Subir un poco "Comparar Planes arrow down"
-- Revisar color borde botones blancos en tarjetas desktop, deberian tener color negro.
