@@ -1,0 +1,58 @@
+{
+  "last-build": "1656013289",
+  "filters": [
+    {
+      "name": "Versión",
+      "id": "version",
+      "options": [
+        {
+          "name": "Plantcare",
+          "id": "plantcare"
+        },
+        {
+          "name": "Plantcare2",
+          "id": "plantcare2"
+        },
+        {
+          "name": "Plantcare3",
+          "id": "plantcare3"
+        }
+      ]
+    },
+    {
+      "name": "Environment",
+      "id": "environment",
+      "options": [
+        {
+          "name": ".NETCloud",
+          "id": "netcloud"
+        },
+        {
+          "name": "Java",
+          "id": "java"
+        },
+        {
+          "name": "Other",
+          "id": "other"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "name": "Web apps",
+      "id": "web-apps",
+      "content": "This is the web apps content"
+    },
+    {
+      "name": "Native apps",
+      "id": "native-apps",
+      "content": "This is the Native apps content"
+    },
+    {
+      "name": "Apis",
+      "id": "apis",
+      "content": "This is the apis content"
+    }
+  ]
+}
