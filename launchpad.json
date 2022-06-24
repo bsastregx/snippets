@@ -42,10 +42,10 @@
     {
       "name": "Web apps",
       "id": "web-apps",
-      "objects": {
-        "main": {
+      "objects": [
+        {
+          "type": "main",
           "name": "main objects",
-          "id": "main-objects",
           "objects": [
             {
               "name": "BusinessLogic.Session",
@@ -89,12 +89,12 @@
             }
           ]
         },
-        "recent": {
+        {
+          "type": "recent",
           "name": "recent objects",
-          "id": "recent-objects",
           "objects": []
         }
-      }
+      ]
     },
     {
       "name": "Native apps",
