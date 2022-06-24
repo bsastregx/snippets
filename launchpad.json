@@ -42,7 +42,55 @@
     {
       "name": "Web apps",
       "id": "web-apps",
-      "content": "This is the web apps content"
+      "objects": {
+        "main": {
+          "name": "main objects",
+          "id": "main-objects",
+          "objects": [
+            {
+              "name": "BusinessLogic.Session",
+              "description": "Description Text",
+              "icon": "general/generator"
+            },
+            {
+              "name": "BusinessLogic.ProductImage ",
+              "description": "Description Text",
+              "icon": "general/environment-select"
+            },
+            {
+              "name": "BusinessLogic.Session",
+              "description": "Description Text",
+              "icon": "general/knowledge-base"
+            },
+            {
+              "name": "BusinessLogic.ProductImage",
+              "description": "Description Text",
+              "icon": "general/patterns"
+            },
+            {
+              "name": "BusinessLogic.Session",
+              "description": "Description Text",
+              "icon": "general/references"
+            },
+            {
+              "name": "BusinessLogic.ProductImage",
+              "description": "Description Text",
+              "icon": "general/oracle"
+            },
+            {
+              "name": "Business",
+              "description": "Description Text",
+              "icon": "general/csharp"
+            },
+            {
+              "name": "Business_Menu",
+              "description": "Description Text",
+              "icon": "general/datastore"
+            }
+          ]
+        },
+        "recent": {}
+      }
     },
     {
       "name": "Native apps",
