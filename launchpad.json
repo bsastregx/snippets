@@ -89,7 +89,11 @@
             }
           ]
         },
-        "recent": {}
+        "recent": {
+          "name": "recent objects",
+          "id": "recent-objects",
+          "objects": []
+        }
       }
     },
     {
