@@ -92,7 +92,56 @@
         {
           "type": "recent",
           "name": "recent objects",
-          "objects": []
+          "objects": [
+            {
+              "name": "BusinessLogic.ProductImage",
+              "type": "Webpanel",
+              "description": "Placeholdertext",
+              "icon": "general/datastore"
+            },
+            {
+              "name": "BusinessLogic.Session",
+              "type": "Session",
+              "description": "Placeholdertext",
+              "icon": "general/csharp"
+            },
+            {
+              "name": "BusinessLogic.ProductImage",
+              "type": "Webpanel",
+              "description": "Placeholdertext",
+              "icon": "general/datastore"
+            },
+            {
+              "name": "BusinessLogic.Session",
+              "type": "Session",
+              "description": "Placeholdertext",
+              "icon": "general/csharp"
+            },
+            {
+              "name": "BusinessLogic.ProductImage",
+              "type": "Webpanel",
+              "description": "Placeholdertext",
+              "icon": "general/datastore"
+            },
+            {
+              "name": "BusinessLogic.Session",
+              "type": "Session",
+              "description": "Placeholdertext",
+              "icon": "general/csharp"
+            },
+            {
+              "name": "BusinessLogic.ProductImage",
+              "type": "Webpanel",
+              "description": "Placeholdertext",
+              "icon": "general/datastore"
+            },
+            {
+              "name": "BusinessLogic.Session",
+              "type": "Session",
+              "description": "Placeholdertext",
+              "icon": "general/csharp"
+            }
+          ]
         }
       ]
     },
