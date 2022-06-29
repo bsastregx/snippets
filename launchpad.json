@@ -94,51 +94,51 @@
           "name": "recent objects",
           "objects": [
             {
-              "name": "BusinessLogic.ProductImage",
-              "type": "Webpanel",
-              "description": "Placeholdertext",
+              "name": "A BusinessLogic.ProductImage",
+              "type": "B Webpanel",
+              "description": "A Placeholdertext",
               "icon": "general/datastore"
             },
             {
-              "name": "BusinessLogic.Session",
-              "type": "Session",
-              "description": "Placeholdertext",
+              "name": "G BusinessLogic.Session",
+              "type": "D Session",
+              "description": "C Placeholdertext",
               "icon": "general/csharp"
             },
             {
-              "name": "BusinessLogic.ProductImage",
-              "type": "Webpanel",
-              "description": "Placeholdertext",
+              "name": "C BusinessLogic.ProductImage",
+              "type": "C Webpanel",
+              "description": "G Placeholdertext",
               "icon": "general/datastore"
             },
             {
-              "name": "BusinessLogic.Session",
-              "type": "Session",
-              "description": "Placeholdertext",
+              "name": "B BusinessLogic.Session",
+              "type": "A Session",
+              "description": "B Placeholdertext",
               "icon": "general/csharp"
             },
             {
-              "name": "BusinessLogic.ProductImage",
-              "type": "Webpanel",
-              "description": "Placeholdertext",
+              "name": "F BusinessLogic.ProductImage",
+              "type": "F Webpanel",
+              "description": "E Placeholdertext",
               "icon": "general/datastore"
             },
             {
-              "name": "BusinessLogic.Session",
-              "type": "Session",
-              "description": "Placeholdertext",
+              "name": "H BusinessLogic.Session",
+              "type": "H Session",
+              "description": "D Placeholdertext",
               "icon": "general/csharp"
             },
             {
-              "name": "BusinessLogic.ProductImage",
-              "type": "Webpanel",
-              "description": "Placeholdertext",
+              "name": "D BusinessLogic.ProductImage",
+              "type": "E Webpanel",
+              "description": "F Placeholdertext",
               "icon": "general/datastore"
             },
             {
-              "name": "BusinessLogic.Session",
-              "type": "Session",
-              "description": "Placeholdertext",
+              "name": "E BusinessLogic.Session",
+              "type": "G Session",
+              "description": "H Placeholdertext",
               "icon": "general/csharp"
             }
           ]

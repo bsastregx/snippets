@@ -1,8 +1,0 @@
-imagen check :
-https://www.genexus.com/media/images/check-1.svg?timestamp=20220519143225
-
-imagen arrow down:
-https://www.genexus.com/media/images/arrow-down.svg?timestamp=20220519193850
-
-imagen arrow up:
-https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958
