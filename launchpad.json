@@ -46,26 +46,100 @@
           "type": "main",
           "objects": [
             {
-              "name": "Session",
               "module": "BusinessLogic",
+              "name": "Session",
               "type": "procedure",
               "url": "http://www.someurl.com",
               "key": {
                 "guid": "395a4f46-1a56-4c69-a6df-fe38db90759a",
                 "int": "8323"
               },
-              "description": "Description Text"
+              "description": "Description Text",
+              "angular": false
             },
             {
-              "name": "ProductImage",
               "module": "BusinessMenu",
+              "name": "ProductImage",
               "type": "webpanel",
               "url": "http://www.someurl.com",
               "key": {
                 "guid": "e560b4a7-2272-4643-9e17-553a4c4ce546",
                 "int": "5124"
               },
-              "description": "Description Text"
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "panel-for-sd",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "395a4f46-1a56-4c69-a6df-fe38db90759a",
+                "int": "8323"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "e560b4a7-2272-4643-9e17-553a4c4ce546",
+                "int": "5124"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "395a4f46-1a56-4c69-a6df-fe38db90759a",
+                "int": "8323"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "webpanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "e560b4a7-2272-4643-9e17-553a4c4ce546",
+                "int": "5124"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "panel-for-sd",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "395a4f46-1a56-4c69-a6df-fe38db90759a",
+                "int": "8323"
+              },
+              "description": "Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "e560b4a7-2272-4643-9e17-553a4c4ce546",
+                "int": "5124"
+              },
+              "description": "Description Text",
+              "angular": true
             }
           ]
         },
@@ -73,37 +147,100 @@
           "type": "recent",
           "objects": [
             {
+              "module": "BusinessLogic",
               "name": "Session",
-              "module": "B BusinessLogic",
-              "type": "C procedure",
+              "type": "procedure",
               "url": "http://www.someurl.com",
               "key": {
                 "guid": "6ee04f6b-0897-4828-9620-7224703683ae",
                 "int": "7246"
               },
-              "description": "Description Text"
+              "description": "Description Text",
+              "angular": false
             },
             {
+              "module": "BusinessMenu",
               "name": "ProductImage",
-              "module": "A BusinessMenu",
-              "type": "B webpanel",
+              "type": "webpanel",
               "url": "http://www.someurl.com",
               "key": {
                 "guid": "813b4741-52d4-4a95-9471-f301856bcbc6",
                 "int": "6624"
               },
-              "description": "Description Text"
+              "description": "Description Text",
+              "angular": false
             },
             {
+              "module": "BusinessLogic",
               "name": "Session",
-              "module": "C BusinessLogic",
-              "type": "A procedure",
+              "type": "panel-for-sd",
               "url": "http://www.someurl.com",
               "key": {
                 "guid": "6ee04f6b-0897-4828-9620-7224703683ae",
                 "int": "7246"
               },
-              "description": "Description Text"
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "int": "7246"
+              },
+              "description": "Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "int": "7246"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "webpanel",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "int": "7246"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "panel-for-sd",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "int": "7246"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "guid": "6ee04f6b-0897-4828-9620- 7224703683ae",
+                "int": "7246"
+              },
+              "description": "Description Text",
+              "angular": true
             }
           ]
         }
