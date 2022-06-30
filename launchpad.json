@@ -40,6 +40,7 @@
   "sections": [
     {
       "name": "Web apps",
+      "id": "web-apps",
       "objects": [
         {
           "type": "main",
@@ -99,6 +100,7 @@
     },
     {
       "name": "Native apps",
+      "id": "native-apps",
       "objects": [
         {
           "type": "ios",
@@ -158,7 +160,8 @@
     },
     {
       "name": "Apis",
-      "apis": [{}]
+      "id": "apis",
+      "apis": []
     }
   ]
 }
