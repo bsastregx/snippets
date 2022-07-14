@@ -257,17 +257,15 @@
               "qr": "http://www.someurl.com",
               "name": "Knowledge Base Navigator",
               "description": "The KBN app makes native iOS online apps prototyping simple.",
-              "app-store-url": "https://apps.apple.com/us/app/amadine-vector-drawing-art/id1339199390",
-              "button-label": null,
-              "button-url": null
+              "url": null,
+              "app-store-url": "https://apps.apple.com/us/app/amadine-vector-drawing-art/id1339199390"
             },
             {
               "qr": "http://www.someurl.com",
               "name": "QRCode for iOS",
               "description": null,
-              "app-store-url": null,
-              "button-label": "Services URL for KBN",
-              "button-url": "http://www.someurl.com"
+              "url": "http://www.someurl.com",
+              "app-store-url": null
             }
           ]
         },
@@ -278,25 +276,22 @@
               "qr": "http://www.someurl.com",
               "name": "PlantCare",
               "description": null,
-              "app-store-url": null,
-              "button-label": "Download",
-              "button-url": "http://www.someurl.com"
+              "url": "http://www.someurl.com",
+              "app-store-url": null
             },
             {
               "qr": "http://www.someurl.com",
               "name": "PlantCare",
               "description": null,
-              "app-store-url": null,
-              "button-label": "Download",
-              "button-url": "http://www.someurl.com"
+              "url": "http://www.someurl.com",
+              "app-store-url": null
             },
             {
               "qr": "http://www.someurl.com",
               "name": "PlantCare",
               "description": null,
-              "app-store-url": null,
-              "button-label": "Download",
-              "button-url": "http://www.someurl.com"
+              "url": "http://www.someurl.com",
+              "app-store-url": null
             }
           ]
         },
