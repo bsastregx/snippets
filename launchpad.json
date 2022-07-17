@@ -304,7 +304,16 @@
     {
       "name": "Apis",
       "id": "apis",
-      "apis": []
+      "apis": [
+        {
+          "name": "customer",
+          "source": "https://apps5.genexus.com/Id991eadef347002013dbb6c06eacd7bb9/ClientsAPI.yaml"
+        },
+        {
+          "name": "payment",
+          "source": "https://apps5.genexus.com/Id991eadef347002013dbb6c06eacd7bb9/ClientsAPI.yaml"
+        }
+      ]
     }
   ]
 }
