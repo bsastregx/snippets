@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Word!</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .container-save-the-date {
+        text-align: center;
+        font-family: Graphik, sans-serif;
+        font-size: 32px;
+        color: #ffffff;
+        line-height: 1.3em;
+      }
+      @media (max-width: 480px) {
+        .container-save-the-date {
+          font-size: 26px;
+          text-align: left;
+          width: calc(100vw - 48px);
+        }
+        .container-save-the-date br {
+          display: none;
+        }
+      }
+      .save-the-date {
+        font-family: "Graphik Semibold", sans-serif;
+        font-size: 16px;
+        color: #dca9f1;
+        font-weight: 600;
+      }
+      .font-weight-600 {
+        font-weight: 600;
+      }
+
+      /*ROTATING TEXT*/
+      #rotating-verb {
+        display: inline-block;
+        color: #dca9f1;
+        transition: 0.25s all;
+      }
+      #rotating-verb.hidden {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translate(-100%, -100%);
+        opacity: 0;
+      }
+      #rotating-verb.opacity-0 {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-save-the-date">
+      <span class="save-the-date">IT&#39;S TODAY! </span>
+      <div>
+        <span class="font-weight-600">Enterprise Low Code 2021</span><br />
+        <span id="rotating-verb-container"
+          ><span id="rotating-verb">Create</span> mission-critical software </span
+        ><br />
+        that improves people&#39;s lives
+      </div>
+    </div>
+    <script>
+      const words = [
+        "Design",
+        "Maintain",
+        "Scale",
+        "Test",
+        "Secure",
+        "Dream",
+        "Deploy",
+        "Create",
+      ];
+
+      (function () {
+        let rotatingVerb = document.getElementById("rotating-verb");
+
+        //Duplicate verb to know how much width the next word wll need
+        let hiddenVerb = rotatingVerb.cloneNode(true);
+        hiddenVerb.classList.add("hidden");
+
+        //Set rotating-verb initial width to make the widh transition later
+        let rotatingVerbInitialWidth = document.querySelector(
+          "#rotating-verb:not(.hidden)"
+        ).offsetWidth;
+        document.querySelector("#rotating-verb:not(.hidden)").style.width =
+          rotatingVerbInitialWidth + "px";
+
+        let rotatingVerbContainer = document.getElementById(
+          "rotating-verb-container"
+        );
+        rotatingVerbContainer.insertBefore(hiddenVerb, rotatingVerb);
+
+        let verbDisplayDuration = 1500;
+        let wordsQuantity = words.length;
+        let wordPosition = 0;
+
+        let changeWord = function (wordPosition) {
+          //first copy the next word to "hiddenVerb", to get the word width
+          hiddenVerb.innerHTML = words[wordPosition];
+          let newWordWidth = hiddenVerb.offsetWidth;
+
+          rotatingVerb.classList.add("opacity-0");
+          setTimeout(function () {
+            rotatingVerb.style.width = newWordWidth + "px";
+            rotatingVerb.innerHTML = words[wordPosition];
+            setTimeout(function () {
+              rotatingVerb.classList.remove("opacity-0");
+              setTimeout(function () {
+                if (wordPosition >= wordsQuantity - 1) {
+                  changeWord(0);
+                } else {
+                  changeWord(wordPosition + 1);
+                }
+              }, verbDisplayDuration);
+            }, 250);
+          }, 250);
+        };
+
+        setTimeout(function () {
+          changeWord(0);
+        }, verbDisplayDuration);
+      })();
+    </script>
+  </body>
+</html>

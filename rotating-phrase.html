@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Phrase!</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container-save-the-date {
+        text-align: center;
+        font-family: Graphik, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.3em;
+        padding: 0 32px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+        margin-top: 0;
+        margin-bottom: 16px;
+        display: block;
+      }
+      /*ROTATING PHRASE*/
+      #rotating-phrase {
+        display: inline-block;
+        color: #5552ff;
+        transition: 0.25s all;
+      }
+      #rotating-phrase.hidden {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translate(-100%, -100%);
+        opacity: 0;
+      }
+      #rotating-phrase.opacity-0 {
+        opacity: 0;
+      }
+      @media (max-width: 992px) {
+        .container-save-the-date {
+          max-width: 660px;
+        }
+      }
+      @media (max-width: 768px) {
+        .container-save-the-date {
+          font-size: 26px;
+          max-width: 550px;
+        }
+        .title {
+          font-size: 32px;
+        }
+      }
+      @media (max-width: 640px) {
+        .container-save-the-date {
+          font-size: 17px;
+          max-width: 360px;
+        }
+        .title {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="container-save-the-date">
+      <span class="title">Enterprise Low Code 2022</span>
+      <span id="rotating-phrase-container">
+        Discover what's new in the next-gen Software Development Platform that
+        help
+        <span id="rotating-phrase"
+          >companies improve peoples lives...</span
+        ></span
+      >
+    </h1>
+    <script>
+      const words = [
+        "companies innovate...",
+        "companies evolve...",
+        "companies speed up...",
+        "developers do more...",
+        "companies improve peoples lives...",
+      ];
+
+      (function () {
+        let rotatingPhrase = document.getElementById("rotating-phrase");
+
+        //Duplicate verb to know how much width the next word wll need
+        let hiddenVerb = rotatingPhrase.cloneNode(true);
+        hiddenVerb.classList.add("hidden");
+
+        //Set rotating-phrase initial width to make the widh transition later
+        let rotatingPhraseInitialWidth =
+          document.querySelector("#rotating-phrase:not(.hidden)").offsetWidth +
+          1;
+        document.querySelector("#rotating-phrase:not(.hidden)").style.width =
+          rotatingPhraseInitialWidth + "px";
+
+        let rotatingPhraseContainer = document.getElementById(
+          "rotating-phrase-container"
+        );
+        rotatingPhraseContainer.insertBefore(hiddenVerb, rotatingPhrase);
+
+        let verbDisplayDuration = 2500;
+        let wordsQuantity = words.length;
+        let wordPosition = 0;
+
+        let changeWord = function (wordPosition) {
+          //first copy the next word to "hiddenVerb", to get the word width
+          hiddenVerb.innerHTML = words[wordPosition];
+          let newWordWidth = hiddenVerb.offsetWidth + 1;
+
+          rotatingPhrase.classList.add("opacity-0");
+
+          setTimeout(function () {
+            rotatingPhrase.innerHTML = "";
+            rotatingPhrase.style.width = newWordWidth + "px";
+            setTimeout(function () {
+              rotatingPhrase.innerHTML = words[wordPosition];
+              setTimeout(function () {
+                rotatingPhrase.classList.remove("opacity-0");
+                setTimeout(function () {
+                  if (wordPosition >= wordsQuantity - 1) {
+                    changeWord(0);
+                  } else {
+                    changeWord(wordPosition + 1);
+                  }
+                }, verbDisplayDuration);
+              }, 250);
+            }, 250);
+          }, 250);
+        };
+
+        setTimeout(function () {
+          changeWord(0);
+        }, verbDisplayDuration);
+      })();
+    </script>
+  </body>
+</html>
