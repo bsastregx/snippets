@@ -69,22 +69,20 @@
   </head>
   <body>
     <h1 class="container-save-the-date">
-      <span class="title">Enterprise Low Code 2022</span>
+      <span class="title">Enterprise Low-Code 2022</span>
       <span id="rotating-phrase-container">
         Discover what's new in the next-gen Software Development Platform that
-        help
-        <span id="rotating-phrase"
-          >companies improve peoples lives...</span
-        ></span
+        helps
+        <span id="rotating-phrase">companies improve peoples lives.</span></span
       >
     </h1>
     <script>
       const words = [
-        "companies innovate...",
-        "companies evolve...",
-        "companies speed up...",
-        "developers do more...",
-        "companies improve peoples lives...",
+        "companies innovate.",
+        "companies evolve.",
+        "companies speed up.",
+        "developers do more.",
+        "companies improve peoples lives.",
       ];
 
       (function () {
@@ -94,13 +92,14 @@
         let hiddenVerb = rotatingPhrase.cloneNode(true);
         hiddenVerb.classList.add("hidden");
 
-        //Set rotating-phrase initial width to make the widh transition later
-        let rotatingPhraseInitialWidth =
-          document.querySelector("#rotating-phrase:not(.hidden)").offsetWidth +
-          5;
-        document.querySelector("#rotating-phrase:not(.hidden)").style.width =
-          rotatingPhraseInitialWidth + "px";
-
+        setTimeout(function () {
+          //Set rotating-phrase initial width to make the widh transition later
+          let rotatingPhraseInitialWidth =
+            document.querySelector("#rotating-phrase:not(.hidden)")
+              .offsetWidth + 1;
+          document.querySelector("#rotating-phrase:not(.hidden)").style.width =
+            rotatingPhraseInitialWidth + "px";
+        }, 500);
         let rotatingPhraseContainer = document.getElementById(
           "rotating-phrase-container"
         );
