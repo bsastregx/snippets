@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>en - Rotating Phrase!</title>
+    <link rel="stylesheet" href="../fonts.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      h1.container-save-the-date {
+        max-width: 840px;
+      }
+      @media (max-width: 992px) {
+        h1.container-save-the-date {
+          max-width: 590px;
+        }
+      }
+      @media (max-width: 768px) {
+        h1.container-save-the-date {
+          max-width: 520px;
+        }
+      }
+      @media (max-width: 640px) {
+        h1.container-save-the-date {
+          max-width: 390px;
+        }
+      }
+      @media (max-width: 480px) {
+        h1.container-save-the-date {
+          max-width: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="container-save-the-date">
+      <span class="title">Enterprise Low-Code 2022</span>
+      <span id="rotating-phrase-container">
+        Discover what's new in the next-gen Software Development Platform that
+        helps
+        <span id="rotating-phrase"
+          >companies improve people's lives.</span
+        ></span
+      >
+    </h1>
+    <script>
+      const words = [
+        "companies innovate.",
+        "companies evolve.",
+        "companies get to the next level.",
+        "developers do more in less time.",
+        "students be productive.",
+        "software houses expand & grow.",
+        "companies improve people's lives.",
+      ];
+
+      (function () {
+        let rotatingPhrase = document.getElementById("rotating-phrase");
+
+        //Duplicate verb to know how much width the next word wll need
+        let hiddenVerb = rotatingPhrase.cloneNode(true);
+        hiddenVerb.classList.add("hidden");
+
+        setTimeout(function () {
+          //Set rotating-phrase initial width to make the widh transition later
+          let rotatingPhraseInitialWidth =
+            document.querySelector("#rotating-phrase:not(.hidden)")
+              .offsetWidth + 1;
+          document.querySelector("#rotating-phrase:not(.hidden)").style.width =
+            rotatingPhraseInitialWidth + "px";
+        }, 2000);
+        let rotatingPhraseContainer = document.getElementById(
+          "rotating-phrase-container"
+        );
+        rotatingPhraseContainer.insertBefore(hiddenVerb, rotatingPhrase);
+
+        let verbDisplayDuration = 2500;
+        let wordsQuantity = words.length;
+        let wordPosition = 0;
+
+        let changeWord = function (wordPosition) {
+          //first copy the next word to "hiddenVerb", to get the word width
+          hiddenVerb.innerHTML = words[wordPosition];
+          let newWordWidth = hiddenVerb.offsetWidth + 1;
+
+          rotatingPhrase.classList.add("opacity-0");
+
+          setTimeout(function () {
+            rotatingPhrase.innerHTML = "";
+            rotatingPhrase.style.width = newWordWidth + "px";
+            setTimeout(function () {
+              rotatingPhrase.innerHTML = words[wordPosition];
+              setTimeout(function () {
+                rotatingPhrase.classList.remove("opacity-0");
+                setTimeout(function () {
+                  if (wordPosition >= wordsQuantity - 1) {
+                    changeWord(0);
+                  } else {
+                    changeWord(wordPosition + 1);
+                  }
+                }, verbDisplayDuration);
+              }, 250);
+            }, 250);
+          }, 250);
+        };
+
+        setTimeout(function () {
+          changeWord(0);
+        }, verbDisplayDuration);
+      })();
+    </script>
+  </body>
+</html>
