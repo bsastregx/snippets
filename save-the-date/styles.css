@@ -13,7 +13,7 @@ h1.container-save-the-date {
 }
 .title {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 1.1em;
   letter-spacing: 0.01em;
   margin-top: 0;
@@ -26,6 +26,10 @@ h1.container-save-the-date {
   color: #5552ff;
   transition: 0.25s all;
 }
+#fixed-phrase {
+  color: #5552ff;
+  display: none;
+}
 #rotating-phrase.hidden {
   position: fixed;
   left: 0;
@@ -37,15 +41,15 @@ h1.container-save-the-date {
   opacity: 0;
 }
 @media (max-width: 992px) {
-}
-@media (max-width: 768px) {
+  h1.container-save-the-date {
+    font-size: 22px;
+  }
   .title {
     font-size: 32px;
     margin-bottom: 16px;
   }
-  h1.container-save-the-date {
-    font-size: 22px;
-  }
+}
+@media (max-width: 768px) {
 }
 @media (max-width: 640px) {
   h1.container-save-the-date {
@@ -55,10 +59,19 @@ h1.container-save-the-date {
   .title {
     font-size: 24px;
   }
+  #fixed-phrase {
+    display: inline;
+  }
+  #rotating-phrase {
+    display: none;
+  }
+  .br {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   h1.container-save-the-date {
-    font-size: 14px;
+    /*font-size: 14px;*/
   }
   .title {
     font-size: 22px;
