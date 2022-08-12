@@ -10,3 +10,16 @@ https://www.genexus.com/media/images/arrow-up.svg?timestamp=20220519193958
 #contact-gisela
 
 - Cambiar la ubicacion de la flecha que sube, segun referencia de Dribble.
+
+============================================================================
+
+Pagina uruguay
+
+- gwds__plans-css-js--professional
+
+- plans&prices-html-professional
+- plans&prices-html-beginners
+- plans&prices-css-tables-mobile
+- plans&prices-css-tables-desktop
+- plans&prices-js
+
