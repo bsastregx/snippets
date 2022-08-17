@@ -51,7 +51,7 @@
               "type": "procedure",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "395a4f46-1a56-4c69-a6df-fe38db90759a",
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
                 "id": "8323"
               },
               "description": "Description Text",
@@ -63,7 +63,7 @@
               "type": "webpanel",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "e560b4a7-2272-4643-9e17-553a4c4ce546",
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
                 "id": "5124"
               },
               "description": "Description Text",
@@ -75,7 +75,7 @@
               "type": "panel-for-sd",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "gdfgdf4353-1a56-4c69-a6df-fe38db90759a",
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
                 "id": "7375"
               },
               "description": "Description Text",
@@ -87,7 +87,7 @@
               "type": "menu",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "jjghkty-2272-4643-9e17-553a4c4ce546",
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
                 "id": "6623"
               },
               "description": "Description Text",
@@ -99,7 +99,7 @@
               "type": "procedure",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "jijfidsjfih-1a56-4c69-a6df-fe38db90759a",
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
                 "id": "6612"
               },
               "description": "Description Text",
@@ -111,7 +111,7 @@
               "type": "webpanel",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "poafjsdop-2272-4643-9e17-553a4c4ce546",
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
                 "id": "4325"
               },
               "description": "Description Text",
@@ -123,7 +123,7 @@
               "type": "panel-for-sd",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "opaskfopk-1a56-4c69-a6df-fe38db90759a",
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
                 "id": "9085"
               },
               "description": "Description Text",
@@ -135,7 +135,7 @@
               "type": "menu",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "opiqwoiu-2272-4643-9e17-553a4c4ce546",
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
                 "id": "9488"
               },
               "description": "Description Text",
@@ -152,7 +152,7 @@
               "type": "procedure",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
                 "id": "7246"
               },
               "description": "B Description Text",
@@ -164,7 +164,7 @@
               "type": "webpanel",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "813b4741-52d4-4a95-9471-f301856bcbc6",
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
                 "id": "6624"
               },
               "description": "H Description Text",
@@ -176,7 +176,7 @@
               "type": "panel-for-sd",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "243ijoij2j-0897-4828-9620-7224703683ae",
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
                 "id": "4892"
               },
               "description": "A Description Text",
@@ -188,7 +188,7 @@
               "type": "menu",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "20idiopidi-0897-4828-9620-7224703683ae",
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
                 "id": "9483"
               },
               "description": "E Description Text",
@@ -200,7 +200,7 @@
               "type": "procedure",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "3ijije-0897-4828-9620-7224703683ae",
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
                 "id": "3322"
               },
               "description": "G Description Text",
@@ -212,7 +212,7 @@
               "type": "procedure",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "903ji3jej-0897-4828-9620-7224703683ae",
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
                 "id": "9873"
               },
               "description": "D Description Text",
@@ -224,7 +224,7 @@
               "type": "panel-for-sd",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "3903ueukj-0897-4828-9620-7224703683ae",
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
                 "id": "5847"
               },
               "description": "F Description Text",
@@ -236,11 +236,275 @@
               "type": "menu",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
                 "id": "7246"
               },
               "description": "C Description Text",
               "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "7246"
+              },
+              "description": "B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "webpanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "7246"
+              },
+              "description": "B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "webpanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "panel-for-sd",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "4892"
+              },
+              "description": "A Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "id": "9483"
+              },
+              "description": "E Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "3322"
+              },
+              "description": "G Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "webpanel",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "9873"
+              },
+              "description": "D Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "panel-for-sd",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "5847"
+              },
+              "description": "F Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "id": "7246"
+              },
+              "description": "C Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "7246"
+              },
+              "description": "B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "webpanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "7246"
+              },
+              "description": "B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "webpanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "panel-for-sd",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "4892"
+              },
+              "description": "A Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "id": "9483"
+              },
+              "description": "E Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "3322"
+              },
+              "description": "G Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "webpanel",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "9873"
+              },
+              "description": "D Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "panel-for-sd",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "5847"
+              },
+              "description": "F Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "menu",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "id": "7246"
+              },
+              "description": "C Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "7246"
+              },
+              "description": "B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "webpanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "H Description Text",
+              "angular": false
             }
           ]
         }
