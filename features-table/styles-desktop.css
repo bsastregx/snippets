@@ -25,6 +25,7 @@
 body {
   margin: 0;
 }
+/*copiar a partir de aca*/
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -122,6 +123,7 @@ body {
   font-weight: 600;
   justify-content: center;
   align-items: center;
+  padding-top: 7px;
 }
 .plan__payment-period {
   font-family: Rubik, Helvetica, Arial, sans-serif;
@@ -148,7 +150,6 @@ body {
 /* /end of plan price sticky */
 .plan_cp {
   font-size: 12px;
-  padding-top: 7px;
   padding-left: 4px;
   display: flex;
   justify-content: center;
@@ -174,7 +175,7 @@ body {
 .plans-header-container.sticky .plans-header .plan {
   padding: 8px;
 }
-.plans-header-container.sticky .plan_cp {
+.plans-header-container.sticky .plan__price {
   padding: 0;
 }
 /******************** FEATURES TABLES (DESKTOP) ********************/
