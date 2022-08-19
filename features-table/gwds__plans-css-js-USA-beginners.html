@@ -1,6 +1,6 @@
 <div id="plans-toggler">
-  <a class="active" id="plans-btn--1">Professional</a>
-  <a id="plans-btn--2">Beginners</a>
+  <a id="plans-btn--1">Professional</a>
+  <a class="active" id="plans-btn--2">Beginners</a>
   <span class="indicator"></span>
 </div>
 <style type="text/css">
@@ -30,24 +30,25 @@
   #plans-toggler .indicator {
     position: absolute;
     height: 34px;
-    width: 128px;
+    width: 108px;
     background-color: #fff;
     top: 6px;
-    left: 6px;
+    left: 136px;
     z-index: 0;
     border-radius: 17px;
     transition: 0.25s all;
   }
   @media (max-width: 992px) {
-    .I74793,
-    .I74681 {
+    .I75093,
+    .I75092 {
       display: none !important;
     }
   }
 
   /*
-  // Cards controller
-  */
+// Cards controller
+*/
+
   @media (max-width: 1254px) {
     .component.I74571,
     .component.I74683 {
@@ -56,11 +57,11 @@
   }
 
   .I74572,
-  .I68551 {
+  .I74684 {
     scroll-snap-type: x mandatory;
   }
   .I74572 .sector,
-  .I68551 .sector {
+  .I74684 .sector {
     scroll-snap-align: start;
     scroll-snap-align: center;
   }
@@ -110,12 +111,12 @@
       this.classList.add("active");
 
       // Pro
-      document.getElementsByClassName("I74681")[0].style.display = "block";
-      document.getElementsByClassName("I74796")[0].style.display = "block";
+      document.getElementsByClassName("I75092")[0].style.display = "block";
+      document.getElementsByClassName("I75094")[0].style.display = "block";
 
       // Beg
-      document.getElementsByClassName("I74793")[0].style.display = "none";
-      document.getElementsByClassName("I74954")[0].style.display = "none";
+      document.getElementsByClassName("I75093")[0].style.display = "none";
+      document.getElementsByClassName("I75110")[0].style.display = "none";
       console.log("Show Plans professional");
     });
 
@@ -126,12 +127,12 @@
       this.classList.add("active");
 
       // Pro
-      document.getElementsByClassName("I74681")[0].style.display = "none";
-      document.getElementsByClassName("I74796")[0].style.display = "none";
+      document.getElementsByClassName("I75092")[0].style.display = "none";
+      document.getElementsByClassName("I75094")[0].style.display = "none";
 
       // Beg
-      document.getElementsByClassName("I74793")[0].style.display = "block";
-      document.getElementsByClassName("I74954")[0].style.display = "block";
+      document.getElementsByClassName("I75093")[0].style.display = "block";
+      document.getElementsByClassName("I75110")[0].style.display = "block";
       console.log("Show Plans beginners");
     });
 </script>
