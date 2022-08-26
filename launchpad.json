@@ -58,7 +58,7 @@
               "angular": false
             },
             {
-              "module": "BusinessMenu",
+              "module": "",
               "name": "ProductImage",
               "type": "webpanel",
               "url": "http://www.someurl.com",
