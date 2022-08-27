@@ -173,7 +173,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "API",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "36e32e2d-023e-4188-95df-d13573bac2e0",
@@ -185,7 +185,7 @@
             {
               "module": "BusinessMenu",
               "name": "ProductImage",
-              "type": "webpanel",
+              "type": "DataProvider",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "2a9e9aba-d2de-4801-ae7f-5e3819222daf",
@@ -197,7 +197,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "panel-for-sd",
+              "type": "MiniApp",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "0eee17f4-cef9-4988-aed4-c2da632be85b",
@@ -208,7 +208,7 @@
             },
             {
               "module": "BusinessLogic",
-              "name": "Session",
+              "name": "Procedure",
               "type": "menu",
               "url": "http://www.someurl.com",
               "key": {
@@ -221,7 +221,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "SDPanel",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
@@ -233,7 +233,7 @@
             {
               "module": "BusinessLogic",
               "name": "webpanel",
-              "type": "procedure",
+              "type": "SuperApp",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "a7e6cce5-1171-49e9-a6a0-07f137eedc07",
@@ -244,7 +244,7 @@
             },
             {
               "module": "BusinessLogic",
-              "name": "Session",
+              "name": "WebPanel",
               "type": "panel-for-sd",
               "url": "http://www.someurl.com",
               "key": {
@@ -257,7 +257,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "menu",
+              "type": "WorkWithDevices",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "15cf49b5-fc38-4899-91b5-395d02d79889",
@@ -269,19 +269,19 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "Procedure",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
                 "id": "7246"
               },
               "description": "1 B Description Text",
-              "angular": false
+              "angular": true
             },
             {
               "module": "BusinessMenu",
               "name": "ProductImage",
-              "type": "webpanel",
+              "type": "WebPanel",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
@@ -293,7 +293,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "Procedure",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
@@ -305,7 +305,7 @@
             {
               "module": "BusinessMenu",
               "name": "ProductImage",
-              "type": "webpanel",
+              "type": "WebPanel",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
@@ -317,7 +317,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "panel-for-sd",
+              "type": "SDPanel",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
@@ -329,10 +329,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "menu",
+              "type": "API",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "type": "36e32e2d-023e-4188-95df-d13573bac2e0",
                 "id": "9483"
               },
               "description": "2 E Description Text",
@@ -341,7 +341,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "Procedure",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
@@ -353,10 +353,10 @@
             {
               "module": "BusinessLogic",
               "name": "webpanel",
-              "type": "procedure",
+              "type": "DataProvider",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "type": "2a9e9aba-d2de-4801-ae7f-5e3819222daf",
                 "id": "9873"
               },
               "description": "2 D Description Text",
@@ -365,7 +365,7 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "panel-for-sd",
+              "type": "SDPanel",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
@@ -377,10 +377,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "menu",
+              "type": "SDMasterPanel",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
                 "id": "7246"
               },
               "description": "2 C Description Text",
@@ -389,10 +389,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "SuperApp",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "type": "a7e6cce5-1171-49e9-a6a0-07f137eedc07",
                 "id": "7246"
               },
               "description": "2 B Description Text",
@@ -401,10 +401,10 @@
             {
               "module": "BusinessMenu",
               "name": "ProductImage",
-              "type": "webpanel",
+              "type": "Transaction",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "type": "1db606f2-af09-4cf9-a3b5-b481519d28f6",
                 "id": "6624"
               },
               "description": "2 H Description Text",
@@ -413,10 +413,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "WebPanel",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
                 "id": "7246"
               },
               "description": "3 B Description Text",
@@ -425,7 +425,7 @@
             {
               "module": "BusinessMenu",
               "name": "ProductImage",
-              "type": "webpanel",
+              "type": "WebComponent",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
@@ -437,10 +437,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "panel-for-sd",
+              "type": "WorkWithDevices",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "type": "15cf49b5-fc38-4899-91b5-395d02d79889",
                 "id": "4892"
               },
               "description": "3 A Description Text",
@@ -449,10 +449,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "menu",
+              "type": "API",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "type": "36e32e2d-023e-4188-95df-d13573bac2e0",
                 "id": "9483"
               },
               "description": "3 E Description Text",
@@ -461,10 +461,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "DataProvider",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "type": "2a9e9aba-d2de-4801-ae7f-5e3819222daf",
                 "id": "3322"
               },
               "description": "3 G Description Text",
@@ -473,10 +473,10 @@
             {
               "module": "BusinessLogic",
               "name": "webpanel",
-              "type": "procedure",
+              "type": "MiniApp",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "type": "0eee17f4-cef9-4988-aed4-c2da632be85b",
                 "id": "9873"
               },
               "description": "3 D Description Text",
@@ -485,10 +485,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "panel-for-sd",
+              "type": "Procedure",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
                 "id": "5847"
               },
               "description": "3 F Description Text",
@@ -497,10 +497,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "menu",
+              "type": "SDPanel",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "526aba9f-a725-4bc7-b1db-0b9f92ac9550",
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
                 "id": "7246"
               },
               "description": "3 C Description Text",
@@ -509,10 +509,10 @@
             {
               "module": "BusinessLogic",
               "name": "Session",
-              "type": "procedure",
+              "type": "SuperApp",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "type": "a7e6cce5-1171-49e9-a6a0-07f137eedc07",
                 "id": "7246"
               },
               "description": "3 B Description Text",
@@ -521,10 +521,10 @@
             {
               "module": "BusinessMenu",
               "name": "ProductImage",
-              "type": "webpanel",
+              "type": "Transaction",
               "url": "http://www.someurl.com",
               "key": {
-                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "type": "1db606f2-af09-4cf9-a3b5-b481519d28f6",
                 "id": "6624"
               },
               "description": "3 H Description Text",
