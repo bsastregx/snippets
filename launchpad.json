@@ -132,7 +132,7 @@
             {
               "module": "BusinessLogic",
               "name": "WebPanel",
-              "type": "panel-for-sd",
+              "type": "WebPanel",
               "url": "http://www.someurl.com",
               "key": {
                 "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
