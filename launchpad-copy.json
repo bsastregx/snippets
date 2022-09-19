@@ -542,16 +542,24 @@
           "type": "ios",
           "objects": [
             {
-              "url": "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/",
-              "generator": "ios",
-              "name": "QRCode for iOS",
-              "description": ""
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "id": "7246"
+              },
+              "name": "Knowledge Base Navigator",
+              "description": "The KBN app makes native iOS online apps prototyping simple.",
+              "app-store-url": "https://apps.apple.com/us/app/amadine-vector-drawing-art/id1339199390"
             },
             {
-              "url": "https://apps.apple.com/app/id1144118177",
-              "generator": "ios",
-              "name": "Knowledge Base Navigator",
-              "description": "The KBN app makes native iOS online apps prototyping simple."
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "id": "7246"
+              },
+              "name": "QRCode for iOS",
+              "description": null,
+              "app-store-url": null
             }
           ]
         },
@@ -559,18 +567,40 @@
           "type": "android",
           "objects": [
             {
-              "url": "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/MagicApp.apk",
-              "generator": "android",
-              "module": "",
-              "type": "Panel",
+              "url": "http://www.someurl.com",
               "key": {
-                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
-                "id": 1
+                "type": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "id": "7246"
               },
-              "name": "MagicApp",
-              "description": "Magic App"
+              "name": "PlantCare",
+              "description": null,
+              "app-store-url": null
+            },
+            {
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "id": "7246"
+              },
+              "name": "PlantCare",
+              "description": null,
+              "app-store-url": null
+            },
+            {
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "6ee04f6b-0897-4828-9620-7224703683ae",
+                "id": "7246"
+              },
+              "name": "PlantCare",
+              "description": null,
+              "app-store-url": null
             }
           ]
+        },
+        {
+          "type": "wechat",
+          "objects": null
         }
       ]
     },
@@ -578,8 +608,14 @@
       "name": "Apis",
       "id": "apis",
       "apis": [
-        "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/default.yaml",
-        "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/API.Weather.yaml"
+        {
+          "name": "customer",
+          "source": "https://apps5.genexus.com/Id991eadef347002013dbb6c06eacd7bb9/ClientsAPI.yaml"
+        },
+        {
+          "name": "payment",
+          "source": "https://apps5.genexus.com/Id991eadef347002013dbb6c06eacd7bb9/ClientsAPI.yaml"
+        }
       ]
     }
   ]
