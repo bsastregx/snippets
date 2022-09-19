@@ -545,13 +545,15 @@
               "url": "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/",
               "generator": "ios",
               "name": "QRCode for iOS",
-              "description": ""
+              "description": "",
+              "app-store-badge": true
             },
             {
               "url": "https://apps.apple.com/app/id1144118177",
               "generator": "ios",
               "name": "Knowledge Base Navigator",
-              "description": "The KBN app makes native iOS online apps prototyping simple."
+              "description": "The KBN app makes native iOS online apps prototyping simple.",
+              "app-store-badge": false
             }
           ]
         },
