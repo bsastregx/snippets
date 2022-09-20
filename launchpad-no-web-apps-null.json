@@ -1,0 +1,106 @@
+{
+  "last-build": "1656013289",
+  "filters": [
+    {
+      "name": "Version",
+      "options": [
+        {
+          "name": "Plantcare",
+          "value": "plantcare"
+        },
+        {
+          "name": "Plantcare2",
+          "value": "plantcare2"
+        },
+        {
+          "name": "Plantcare3",
+          "value": "plantcare3"
+        }
+      ]
+    },
+    {
+      "name": "Environment",
+      "id": "environment",
+      "options": [
+        {
+          "name": ".NETCloud",
+          "value": "netcloud"
+        },
+        {
+          "name": "Java",
+          "value": "java"
+        },
+        {
+          "name": "Other",
+          "value": "other"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "name": "Web apps",
+      "id": "web-apps",
+      "objects": [
+        {
+          "type": "main",
+          "objects": null
+        },
+        {
+          "type": "recent",
+          "objects": null
+        }
+      ]
+    },
+    {
+      "name": "Native apps",
+      "id": "native-apps",
+      "objects": [
+        {
+          "type": "ios",
+          "objects": [
+            {
+              "url": "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/",
+              "generator": "ios",
+              "name": "QRCode for iOS",
+              "description": "",
+              "app-store-badge": true
+            },
+            {
+              "url": "https://apps.apple.com/app/id1144118177",
+              "generator": "ios",
+              "name": "Knowledge Base Navigator",
+              "description": "The KBN app makes native iOS online apps prototyping simple.",
+              "app-store-badge": false
+            }
+          ]
+        },
+        {
+          "type": "android",
+          "objects": [
+            {
+              "url": "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/MagicApp.apk",
+              "generator": "android",
+              "module": "",
+              "type": "Panel",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": 1
+              },
+              "name": "MagicApp",
+              "description": "Magic App"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Apis",
+      "id": "apis",
+      "apis": [
+        "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/default.yaml",
+        "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/API.Weather.yaml"
+      ]
+    }
+  ]
+}

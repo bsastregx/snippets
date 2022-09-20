@@ -1,0 +1,585 @@
+{
+  "last-build": "1656013289",
+  "filters": [
+    {
+      "name": "Version",
+      "options": [
+        {
+          "name": "Plantcare",
+          "value": "plantcare"
+        },
+        {
+          "name": "Plantcare2",
+          "value": "plantcare2"
+        },
+        {
+          "name": "Plantcare3",
+          "value": "plantcare3"
+        }
+      ]
+    },
+    {
+      "name": "Environment",
+      "id": "environment",
+      "options": [
+        {
+          "name": ".NETCloud",
+          "value": "netcloud"
+        },
+        {
+          "name": "Java",
+          "value": "java"
+        },
+        {
+          "name": "Other",
+          "value": "other"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "name": "Web apps",
+      "id": "web-apps",
+      "objects": [
+        {
+          "type": "main",
+          "objects": [
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "API",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "36e32e2d-023e-4188-95df-d13573bac2e0",
+                "id": "8323"
+              },
+              "description": "",
+              "angular": false
+            },
+            {
+              "module": "",
+              "name": "ProductImage",
+              "type": "DataProvider",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "2a9e9aba-d2de-4801-ae7f-5e3819222daf",
+                "id": "5124"
+              },
+              "description": "",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "MiniApp",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "0eee17f4-cef9-4988-aed4-c2da632be85b",
+                "id": "7375"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "Procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "6623"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SDPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "6612"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "SuperApp",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "a7e6cce5-1171-49e9-a6a0-07f137eedc07",
+                "id": "4325"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "Transaction",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "1db606f2-af09-4cf9-a3b5-b481519d28f6",
+                "id": "4325"
+              },
+              "description": "Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "WebPanel",
+              "type": "WebPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "9085"
+              },
+              "description": "Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "WebComponent",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "9085"
+              },
+              "description": "Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "WorkWithDevices",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "15cf49b5-fc38-4899-91b5-395d02d79889",
+                "id": "9488"
+              },
+              "description": "Description Text",
+              "angular": true
+            }
+          ]
+        },
+        {
+          "type": "recent",
+          "objects": [
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "API",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "36e32e2d-023e-4188-95df-d13573bac2e0",
+                "id": "7246"
+              },
+              "description": "1 B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "DataProvider",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "2a9e9aba-d2de-4801-ae7f-5e3819222daf",
+                "id": "6624"
+              },
+              "description": "1 H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "MiniApp",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "0eee17f4-cef9-4988-aed4-c2da632be85b",
+                "id": "4892"
+              },
+              "description": "1 A Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Procedure",
+              "type": "Procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "9483"
+              },
+              "description": "1 E Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SDPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "3322"
+              },
+              "description": "1 G Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "webpanel",
+              "type": "SuperApp",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "a7e6cce5-1171-49e9-a6a0-07f137eedc07",
+                "id": "9873"
+              },
+              "description": "1 D Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "WebPanel",
+              "type": "WebPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "5847"
+              },
+              "description": "1 F Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "WorkWithDevices",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "15cf49b5-fc38-4899-91b5-395d02d79889",
+                "id": "7246"
+              },
+              "description": "1 C Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "Procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "7246"
+              },
+              "description": "1 B Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "WebPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "1 H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "Procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "7246"
+              },
+              "description": "2 B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "WebPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "2 H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SDPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "4892"
+              },
+              "description": "2 A Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "API",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "36e32e2d-023e-4188-95df-d13573bac2e0",
+                "id": "9483"
+              },
+              "description": "2 E Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "Procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "3322"
+              },
+              "description": "2 G Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "webpanel",
+              "type": "DataProvider",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "2a9e9aba-d2de-4801-ae7f-5e3819222daf",
+                "id": "9873"
+              },
+              "description": "2 D Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SDPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "5847"
+              },
+              "description": "2 F Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SDPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "7246"
+              },
+              "description": "2 C Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SuperApp",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "a7e6cce5-1171-49e9-a6a0-07f137eedc07",
+                "id": "7246"
+              },
+              "description": "2 B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "Transaction",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "1db606f2-af09-4cf9-a3b5-b481519d28f6",
+                "id": "6624"
+              },
+              "description": "2 H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "WebPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "7246"
+              },
+              "description": "3 B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "WebComponent",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "c9584656-94b6-4ccd-890f-332d11fc2c25",
+                "id": "6624"
+              },
+              "description": "3 H Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "WorkWithDevices",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "15cf49b5-fc38-4899-91b5-395d02d79889",
+                "id": "4892"
+              },
+              "description": "3 A Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "API",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "36e32e2d-023e-4188-95df-d13573bac2e0",
+                "id": "9483"
+              },
+              "description": "3 E Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "DataProvider",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "2a9e9aba-d2de-4801-ae7f-5e3819222daf",
+                "id": "3322"
+              },
+              "description": "3 G Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "webpanel",
+              "type": "MiniApp",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "0eee17f4-cef9-4988-aed4-c2da632be85b",
+                "id": "9873"
+              },
+              "description": "3 D Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "Procedure",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "84a12160-f59b-4ad7-a683-ea4481ac23e9",
+                "id": "5847"
+              },
+              "description": "3 F Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SDPanel",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": "7246"
+              },
+              "description": "3 C Description Text",
+              "angular": true
+            },
+            {
+              "module": "BusinessLogic",
+              "name": "Session",
+              "type": "SuperApp",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "a7e6cce5-1171-49e9-a6a0-07f137eedc07",
+                "id": "7246"
+              },
+              "description": "3 B Description Text",
+              "angular": false
+            },
+            {
+              "module": "BusinessMenu",
+              "name": "ProductImage",
+              "type": "Transaction",
+              "url": "http://www.someurl.com",
+              "key": {
+                "type": "1db606f2-af09-4cf9-a3b5-b481519d28f6",
+                "id": "6624"
+              },
+              "description": "3 H Description Text",
+              "angular": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Native apps",
+      "id": "native-apps",
+      "objects": [
+        {
+          "type": "ios",
+          "objects": [
+            {
+              "url": "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/",
+              "generator": "ios",
+              "name": "QRCode for iOS",
+              "description": "",
+              "app-store-badge": true
+            },
+            {
+              "url": "https://apps.apple.com/app/id1144118177",
+              "generator": "ios",
+              "name": "Knowledge Base Navigator",
+              "description": "The KBN app makes native iOS online apps prototyping simple.",
+              "app-store-badge": false
+            }
+          ]
+        },
+        {
+          "type": "android",
+          "objects": [
+            {
+              "url": "https://apps5.genexus.com/Id3e6cf49922980b9009fed16bd5153cd7/MagicApp.apk",
+              "generator": "android",
+              "module": "",
+              "type": "Panel",
+              "key": {
+                "type": "d82625fd-5892-40b0-99c9-5c8559c197fc",
+                "id": 1
+              },
+              "name": "MagicApp",
+              "description": "Magic App"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Apis",
+      "id": "apis",
+      "apis": null
+    }
+  ]
+}
