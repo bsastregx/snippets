@@ -1,0 +1,28 @@
+{
+  "news": [
+    {
+      "category": "Software Development",
+      "title": "4 Tips on test automation",
+      "autor-name": "Elvis Presley",
+      "author-avatar-url": "../assets/images/elvis.jpg",
+      "date": "9/5/2022",
+      "excerpt": "In order to deliver value to the customer quickly and continuously, DevOps teams must work collaboratively."
+    },
+    {
+      "category": "Software Development",
+      "title": "4 Tips on test automation",
+      "autor-name": "Elvis Presley",
+      "author-avatar-url": "../assets/images/elvis.jpg",
+      "date": "9/5/2022",
+      "excerpt": "In order to deliver value to the customer quickly and continuously, DevOps teams must work collaboratively."
+    },
+    {
+      "category": "Software Development",
+      "title": "4 Tips on test automation",
+      "autor-name": "Elvis Presley",
+      "author-avatar-url": "../assets/images/elvis.jpg",
+      "date": "9/5/2022",
+      "excerpt": "In order to deliver value to the customer quickly and continuously, DevOps teams must work collaboratively."
+    }
+  ]
+}
