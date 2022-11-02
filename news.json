@@ -4,40 +4,40 @@
       "category": "Software Development",
       "title": "DevOps: 6 talks to understand its importance, strategies and uses",
       "autor-name": "Elvis Presley",
-      "author-avatar-url": "../assets/images/elvis.jpg",
+      "author-avatar-url": "/assets-stencil/images/elvis.jpg",
       "date": "12/14/2021",
       "excerpt": "DevOps is a set of practices and tools that bring together software development and IT operations. The main objective of this framework is to accelerate the software development life cycle.",
-      "image-url": "../assets/images/blog/blog-1.webp",
+      "image-url": "/assets-stencil/images/blog/blog-1.webp",
       "image-alt": ""
     },
     {
       "category": "Software Development",
       "title": "4 key aspects when developing mission-critical applications",
       "autor-name": "Elvis Presley",
-      "author-avatar-url": "../assets/images/elvis.jpg",
+      "author-avatar-url": "/assets-stencil/images/elvis.jpg",
       "date": "6/7/2022",
       "excerpt": "What are mission-critical applications? They are extremely important and high-impact applications whose performance is, needless to say, critical.",
-      "image-url": "../assets/images/blog/blog-2.webp",
+      "image-url": "/assets-stencil/images/blog/blog-2.webp",
       "image-alt": ""
     },
     {
       "category": "Software Development",
       "title": "2022 in Low-Code key: What’s coming in GeneXus!",
       "autor-name": "Elvis Presley",
-      "author-avatar-url": "../assets/images/elvis.jpg",
+      "author-avatar-url": "/assets-stencil/images/elvis.jpg",
       "date": "1/14/2022",
       "excerpt": "GeneXus will come with a new design system, Unanimo, which will be presented as a module that will contain, in addition to the design system object, all the additional components: images, files, user controls, stencils…",
-      "image-url": "../assets/images/blog/blog-3.webp",
+      "image-url": "/assets-stencil/images/blog/blog-3.webp",
       "image-alt": ""
     },
     {
       "category": "Software Development",
       "title": "IT Security: a key aspect of mission-critical systems",
       "autor-name": "Elvis Presley",
-      "author-avatar-url": "../assets/images/elvis.jpg",
+      "author-avatar-url": "/assets-stencil/images/elvis.jpg",
       "date": "11/30/2021",
       "excerpt": "We recently talked about the crucial relevance of computer security in today’s world and the different types of attacks and impacts on systems and applications. ",
-      "image-url": "../assets/images/blog/blog-4.webp",
+      "image-url": "/assets-stencil/images/blog/blog-4.webp",
       "image-alt": ""
     }
   ]
